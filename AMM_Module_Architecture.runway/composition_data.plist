@@ -37,7 +37,7 @@
 								ZzEyNTJcY29j
 								b2FydGYxNTA0
 								XGNvY29hc3Vi
-								cnRmODEwCntc
+								cnRmODMwCntc
 								Zm9udHRibFxm
 								MFxmc3dpc3Nc
 								ZmNoYXJzZXQw
@@ -183,7 +183,7 @@
 								ZzEyNTJcY29j
 								b2FydGYxNTA0
 								XGNvY29hc3Vi
-								cnRmODEwCntc
+								cnRmODMwCntc
 								Zm9udHRibFxm
 								MFxmc3dpc3Nc
 								ZmNoYXJzZXQw
@@ -432,7 +432,7 @@
 								ZzEyNTJcY29j
 								b2FydGYxNTA0
 								XGNvY29hc3Vi
-								cnRmODEwCntc
+								cnRmODMwCntc
 								Zm9udHRibFxm
 								MFxmc3dpc3Nc
 								ZmNoYXJzZXQw
@@ -466,12 +466,11 @@
 								XHBhcnRpZ2h0
 								ZW5mYWN0b3Iw
 								CgpcZjBcZnM0
-								OCBcY2YyIFx1
-								cDAgQU1NIERl
-								dmVsb3BtZW50
-								IEtpdFwKU3lz
-								dGVtIE9uIE1v
-								ZHVsZX0=
+								OCBcY2YyIEFN
+								TSBEZXZlbG9w
+								bWVudCBLaXRc
+								ClN5c3RlbSBP
+								biBNb2R1bGV9
 									</data>
 									<key>className</key>
 									<string>RoundRectangle</string>
@@ -580,7 +579,7 @@
 								ZzEyNTJcY29j
 								b2FydGYxNTA0
 								XGNvY29hc3Vi
-								cnRmODEwCntc
+								cnRmODMwCntc
 								Zm9udHRibFxm
 								MFxmc3dpc3Nc
 								ZmNoYXJzZXQw
@@ -928,7 +927,7 @@
 								ZzEyNTJcY29j
 								b2FydGYxNTA0
 								XGNvY29hc3Vi
-								cnRmODEwCntc
+								cnRmODMwCntc
 								Zm9udHRibFxm
 								MFxmc3dpc3Nc
 								ZmNoYXJzZXQw
@@ -1071,7 +1070,7 @@
 								ZzEyNTJcY29j
 								b2FydGYxNTA0
 								XGNvY29hc3Vi
-								cnRmODEwCntc
+								cnRmODMwCntc
 								Zm9udHRibFxm
 								MFxmc3dpc3Nc
 								ZmNoYXJzZXQw
@@ -1238,7 +1237,7 @@
 								ZzEyNTJcY29j
 								b2FydGYxNTA0
 								XGNvY29hc3Vi
-								cnRmODEwCntc
+								cnRmODMwCntc
 								Zm9udHRibFxm
 								MFxmc3dpc3Nc
 								ZmNoYXJzZXQw
@@ -1485,7 +1484,7 @@
 								ZzEyNTJcY29j
 								b2FydGYxNTA0
 								XGNvY29hc3Vi
-								cnRmODEwCntc
+								cnRmODMwCntc
 								Zm9udHRibFxm
 								MFxmc3dpc3Nc
 								ZmNoYXJzZXQw
@@ -1645,7 +1644,7 @@
 								ZzEyNTJcY29j
 								b2FydGYxNTA0
 								XGNvY29hc3Vi
-								cnRmODEwCntc
+								cnRmODMwCntc
 								Zm9udHRibFxm
 								MFxmc3dpc3Nc
 								ZmNoYXJzZXQw
@@ -1679,10 +1678,9 @@
 								XHBhcnRpZ2h0
 								ZW5mYWN0b3Iw
 								CgpcZjBcZnMz
-								NiBcY2YyIFx1
-								cDAgU2lnbmFs
-								IE5vcm1hbGl6
-								YXRpb259
+								NiBcY2YyIFNp
+								Z25hbCBDb25k
+								aXRpb25pbmd9
 									</data>
 									<key>className</key>
 									<string>RoundRectangle</string>
@@ -1804,7 +1802,7 @@
 								ZzEyNTJcY29j
 								b2FydGYxNTA0
 								XGNvY29hc3Vi
-								cnRmODEwCntc
+								cnRmODMwCntc
 								Zm9udHRibFxm
 								MFxmc3dpc3Nc
 								ZmNoYXJzZXQw
@@ -1838,10 +1836,10 @@
 								XHBhcnRpZ2h0
 								ZW5mYWN0b3Iw
 								CgpcZjBcZnMz
-								NiBcY2YyIFx1
-								cDAgQ3VzdG9t
-								IEludGVyZmFj
-								ZSBCb2FyZH0=
+								NiBcY2YyIEN1
+								c3RvbSBJbnRl
+								cmZhY2UgQm9h
+								cmR9
 									</data>
 									<key>className</key>
 									<string>RoundRectangle</string>
@@ -3918,6 +3916,8 @@
 				<real>900</real>
 				<key>name</key>
 				<string>Custom</string>
+				<key>resolution</key>
+				<real>72</real>
 				<key>unitType</key>
 				<integer>0</integer>
 				<key>width</key>
@@ -3934,7 +3934,7 @@
 			<key>scaleImage</key>
 			<true/>
 			<key>scrollCenterPoint</key>
-			<string>{300, 450}</string>
+			<string>{299.5, 450}</string>
 			<key>stroke1Color</key>
 			<string></string>
 			<key>stroke1Enabled</key>
