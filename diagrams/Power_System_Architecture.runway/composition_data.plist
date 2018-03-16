@@ -15271,7 +15271,7 @@
 				</dict>
 				<dict>
 					<key>pointerCorner</key>
-					<integer>4</integer>
+					<integer>3</integer>
 					<key>pointerIdentifier</key>
 					<string>32E4D26A-1DAD-4A57-8EC2-D4D4B9330D86</string>
 					<key>shapeEdge</key>
@@ -15283,7 +15283,7 @@
 				</dict>
 				<dict>
 					<key>pointerCorner</key>
-					<integer>3</integer>
+					<integer>4</integer>
 					<key>pointerIdentifier</key>
 					<string>32E4D26A-1DAD-4A57-8EC2-D4D4B9330D86</string>
 					<key>shapeEdge</key>
@@ -15343,18 +15343,6 @@
 				</dict>
 				<dict>
 					<key>pointerCorner</key>
-					<integer>3</integer>
-					<key>pointerIdentifier</key>
-					<string>6EF5E397-4B43-461E-8BB9-57FFA9D66326</string>
-					<key>shapeEdge</key>
-					<integer>0</integer>
-					<key>shapeIdentifier</key>
-					<string>BB93326C-777F-414C-8C4A-DCC181A495D6</string>
-					<key>shapeRatio</key>
-					<real>0.88571428571428568</real>
-				</dict>
-				<dict>
-					<key>pointerCorner</key>
 					<integer>1</integer>
 					<key>pointerIdentifier</key>
 					<string>6EF5E397-4B43-461E-8BB9-57FFA9D66326</string>
@@ -15364,6 +15352,18 @@
 					<string>BB93326C-777F-414C-8C4A-DCC181A495D6</string>
 					<key>shapeRatio</key>
 					<real>0.90909090909090906</real>
+				</dict>
+				<dict>
+					<key>pointerCorner</key>
+					<integer>3</integer>
+					<key>pointerIdentifier</key>
+					<string>6EF5E397-4B43-461E-8BB9-57FFA9D66326</string>
+					<key>shapeEdge</key>
+					<integer>0</integer>
+					<key>shapeIdentifier</key>
+					<string>BB93326C-777F-414C-8C4A-DCC181A495D6</string>
+					<key>shapeRatio</key>
+					<real>0.88571428571428568</real>
 				</dict>
 				<dict>
 					<key>pointerCorner</key>
