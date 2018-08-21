@@ -140,8 +140,8 @@
 					MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2
 					MDBcdHg2MTYwXHR4NjcyMFxwYXJkaXJuYXR1
 					cmFsXHFjXHBhcnRpZ2h0ZW5mYWN0b3IwCgpc
-					ZjBcZnMzNCBcY2YyIFx1cDAgU21hcnRcClN5
-					cmluZ2V9
+					ZjBcZnMzNCBcY2YyIFNtYXJ0XApTeXJpbmdl
+					fQ==
 					</data>
 					<key>className</key>
 					<string>ResizeText</string>
@@ -373,8 +373,8 @@
 					dHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAw
 					XHR4NjE2MFx0eDY3MjBccGFyZGlybmF0dXJh
 					bFxxY1xwYXJ0aWdodGVuZmFjdG9yMAoKXGYw
-					XGZzMzYgXGNmMiBcdXAwIEV2ZW50IEZyYWdt
-					ZW50IFRvcGljfQ==
+					XGZzMzYgXGNmMiBFdmVudCBGcmFnbWVudCBU
+					b3BpY30=
 					</data>
 					<key>className</key>
 					<string>RoundRectangle</string>
@@ -490,8 +490,8 @@
 					dHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAw
 					XHR4NjE2MFx0eDY3MjBccGFyZGlybmF0dXJh
 					bFxxY1xwYXJ0aWdodGVuZmFjdG9yMAoKXGYw
-					XGZzMzYgXGNmMiBcdXAwIEZyYWdtZW50IEFt
-					ZW5kbWVudCBSZXF1ZXN0IFRvcGljfQ==
+					XGZzMzYgXGNmMiBGcmFnbWVudCBBbWVuZG1l
+					bnQgUmVxdWVzdCBUb3BpY30=
 					</data>
 					<key>className</key>
 					<string>RoundRectangle</string>
@@ -607,8 +607,8 @@
 					dHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAw
 					XHR4NjE2MFx0eDY3MjBccGFyZGlybmF0dXJh
 					bFxxY1xwYXJ0aWdodGVuZmFjdG9yMAoKXGYw
-					XGZzMzYgXGNmMiBcdXAwIEV2ZW50IFJlY29y
-					ZCBUb3BpY30=
+					XGZzMzYgXGNmMiBFdmVudCBSZWNvcmQgVG9w
+					aWN9
 					</data>
 					<key>className</key>
 					<string>RoundRectangle</string>
@@ -724,10 +724,9 @@
 					MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
 					MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsXHFj
 					XHBhcnRpZ2h0ZW5mYWN0b3IwCgpcZjBcZnMy
-					NCBcY2YyIFxleHBuZDBcZXhwbmR0dzBca2Vy
-					bmluZzAKXG91dGwwXHN0cm9rZXdpZHRoMCBc
-					c3Ryb2tlYzIgTmVlZGxlXAppbnNlcnRlZFwK
-					YXQgVGltZV8wfQ==
+					MiBcY2YyIFxleHBuZDBcZXhwbmR0dzBca2Vy
+					bmluZzAKTmVlZGxlXAppbnNlcnRlZFwKYXQg
+					VGltZV8wfQ==
 					</data>
 					<key>className</key>
 					<string>ResizeText</string>
@@ -1283,8 +1282,7 @@
 					MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2
 					MDBcdHg2MTYwXHR4NjcyMFxwYXJkaXJuYXR1
 					cmFsXHFjXHBhcnRpZ2h0ZW5mYWN0b3IwCgpc
-					ZjBcZnMzNCBcY2YyIFNtYXJ0XApTeXJpbmdl
-					fQ==
+					ZjBcZnMzNCBcY2YyIElWXApBcm19
 					</data>
 					<key>className</key>
 					<string>ResizeText</string>
@@ -1311,7 +1309,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{1320, 60}, {60, 50}}</string>
+					<string>{{1335, 65}, {31, 40}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -1327,7 +1325,7 @@
 					<key>rotationAngle</key>
 					<integer>0</integer>
 					<key>rotationHandleRadius</key>
-					<real>0.0</real>
+					<real>30</real>
 					<key>scaleImage</key>
 					<true/>
 					<key>stroke1Color</key>
@@ -1399,13 +1397,12 @@
 					dHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIw
 					XHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2
 					MFx0eDY3MjBccGFyZGlybmF0dXJhbFxxY1xw
-					YXJ0aWdodGVuZmFjdG9yMAoKXGYwXGZzMjQg
+					YXJ0aWdodGVuZmFjdG9yMAoKXGYwXGZzMjIg
 					XGNmMiBcZXhwbmQwXGV4cG5kdHcwXGtlcm5p
-					bmcwClxvdXRsMFxzdHJva2V3aWR0aDAgXHN0
-					cm9rZWMyIERldGVjdCBuZWVkbGUgaW5zZXJ0
-					aW9uIFwKPT4gTGlzdGVuIGZvciBFdmVudCBc
-					CkZyYWdtZW50IG9mIGFwcHJvcHJpYXRlIFwK
-					dHlwZXM6IEluamVjdGlvbiwgSW5mdXNpb259
+					bmcwCkRldGVjdCBuZWVkbGUgaW5zZXJ0aW9u
+					IFwKPT4gTGlzdGVuIGZvciBFdmVudCBcCkZy
+					YWdtZW50IG9mIGFwcHJvcHJpYXRlIFwKdHlw
+					ZXM6IEluamVjdGlvbiwgSW5mdXNpb259
 					</data>
 					<key>className</key>
 					<string>ResizeText</string>
@@ -1853,16 +1850,15 @@
 					NTYwMFx0eDYxNjBcdHg2NzIwXHBhcmRpcm5h
 					dHVyYWxccGFydGlnaHRlbmZhY3RvcjAKClxm
 					MFxmczI0IFxjZjIgXGV4cG5kMFxleHBuZHR3
-					MFxrZXJuaW5nMApcdXAwIFxvdXRsMFxzdHJv
-					a2V3aWR0aDAgXHN0cm9rZWMyIElEOiAJCQlF
-					Rl8xIChVVUlEKVwKVGltZXN0YW1wOglUaW1l
-					XzFcCkxvY2F0aW9uOgkJClxiIE51bGwKXGIw
-					IFwKUHJhY3RpdGlvbmVyOglTdHVkZW50XzFc
-					ClR5cGU6CQlJbmplY3Rpb25cCkRhdGE6CQkK
-					XGYxIDxpbmplY3Rpb25cCgkgCQkJZHJ1Zz0i
-					XHVjMFx1MTU3IGRydWdfbmFtZSJcCgkgCQkJ
-					cXVhbnRpdHk9IjEwIlwKCSAJCQl1bml0cz0i
-					XHVjMFx1MTU3IG1MIlwKCQkJLz59
+					MFxrZXJuaW5nMApcdXAwIElEOiAJCQlFRl8x
+					IChVVUlEKVwKVGltZXN0YW1wOglUaW1lXzFc
+					CkxvY2F0aW9uOgkJClxiIE51bGwKXGIwIFwK
+					UHJhY3RpdGlvbmVyOglTdHVkZW50XzFcClR5
+					cGU6CQlJbmplY3Rpb25cCkRhdGE6CQkKXGYx
+					IDxpbmplY3Rpb25cCgkgCQkJZHJ1Zz0iXHVj
+					MFx1MTU3IGRydWdfbmFtZSJcCgkgCQkJcXVh
+					bnRpdHk9IjEwIlwKCSAJCQl1bml0cz0iXHVj
+					MFx1MTU3IG1MIlwKCQkJLz59
 					</data>
 					<key>className</key>
 					<string>Swoosh</string>
@@ -2187,7 +2183,7 @@
 					dHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIw
 					XHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2
 					MFx0eDY3MjBccGFyZGlybmF0dXJhbFxxY1xw
-					YXJ0aWdodGVuZmFjdG9yMAoKXGYwXGZzMjQg
+					YXJ0aWdodGVuZmFjdG9yMAoKXGYwXGZzMjIg
 					XGNmMiBcZXhwbmQwXGV4cG5kdHcwXGtlcm5p
 					bmcwClBsdW5nZXJcCmRlcHJlc3NlZH0=
 					</data>
@@ -2304,11 +2300,10 @@
 					dHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIw
 					XHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2
 					MFx0eDY3MjBccGFyZGlybmF0dXJhbFxxY1xw
-					YXJ0aWdodGVuZmFjdG9yMAoKXGYwXGZzMjQg
+					YXJ0aWdodGVuZmFjdG9yMAoKXGYwXGZzMjIg
 					XGNmMiBcZXhwbmQwXGV4cG5kdHcwXGtlcm5p
-					bmcwClxvdXRsMFxzdHJva2V3aWR0aDAgXHN0
-					cm9rZWMyIEV2ZW50IFwKZGV0ZWN0ZWRcCmF0
-					IFRpbWVfMX0=
+					bmcwCkV2ZW50IFwKZGV0ZWN0ZWRcCmF0IFRp
+					bWVfMX0=
 					</data>
 					<key>className</key>
 					<string>ResizeText</string>
@@ -2644,7 +2639,7 @@
 					dHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAw
 					XHR4NjE2MFx0eDY3MjBccGFyZGlybmF0dXJh
 					bFxxY1xwYXJ0aWdodGVuZmFjdG9yMAoKXGYw
-					XGZzMjggXGNmMiBcdXAwIFB1Ymxpc2h9
+					XGZzMjggXGNmMiBQdWJsaXNofQ==
 					</data>
 					<key>className</key>
 					<string>ResizeText</string>
@@ -2761,13 +2756,12 @@
 					MFx0eDY3MjBccGFyZGlybmF0dXJhbFxwYXJ0
 					aWdodGVuZmFjdG9yMAoKXGYwXGZzMjQgXGNm
 					MiBcZXhwbmQwXGV4cG5kdHcwXGtlcm5pbmcw
-					ClxvdXRsMFxzdHJva2V3aWR0aDAgXHN0cm9r
-					ZWMyIElEOiAJCQlGQVJfMVwKRnJhZ21lbnQg
-					SUQ6CUVGXzFcClN0YXR1czoJCVJlcXVlc3Rp
-					bmdcClRpbWVzdGFtcDoJTnVsbFwKTG9jYXRp
-					b246CQlSaWdodF9Bcm1cClByYWN0aXRpb25l
-					cjoJTnVsbFwKVHlwZToJCU51bGxcCkRhdGE6
-					CQlOdWxsXAp9
+					CklEOiAJCQlGQVJfMVwKRnJhZ21lbnQgSUQ6
+					CUVGXzFcClN0YXR1czoJCVJlcXVlc3Rpbmdc
+					ClRpbWVzdGFtcDoJTnVsbFwKTG9jYXRpb246
+					CQlSaWdodF9Bcm1cClByYWN0aXRpb25lcjoJ
+					TnVsbFwKVHlwZToJCU51bGxcCkRhdGE6CQlO
+					dWxsXAp9
 					</data>
 					<key>className</key>
 					<string>Swoosh</string>
@@ -3110,12 +3104,12 @@
 					MFx0eDY3MjBccGFyZGlybmF0dXJhbFxwYXJ0
 					aWdodGVuZmFjdG9yMAoKXGYwXGZzMjQgXGNm
 					MiBcZXhwbmQwXGV4cG5kdHcwXGtlcm5pbmcw
-					Clx1cDAgSUQ6IAkJCQpcYiBGQVJfMQpcYjAg
-					XApGcmFnbWVudCBJRDoJRUZfMVwKU3RhdHVz
-					OgkJClxiIEFjY2VwdGVkClxiMCBcClRpbWVz
-					dGFtcDoJTnVsbFwKTG9jYXRpb246CQlSaWdo
-					dF9Bcm1cClByYWN0aXRpb25lcjoJTnVsbFwK
-					VHlwZToJCU51bGxcCkRhdGE6CQlOdWxsXAp9
+					CklEOiAJCQkKXGIgRkFSXzEKXGIwIFwKRnJh
+					Z21lbnQgSUQ6CUVGXzFcClN0YXR1czoJCQpc
+					YiBBY2NlcHRlZApcYjAgXApUaW1lc3RhbXA6
+					CU51bGxcCkxvY2F0aW9uOgkJUmlnaHRfQXJt
+					XApQcmFjdGl0aW9uZXI6CU51bGxcClR5cGU6
+					CQlOdWxsXApEYXRhOgkJTnVsbFwKfQ==
 					</data>
 					<key>className</key>
 					<string>Swoosh</string>
@@ -3341,8 +3335,8 @@
 					dHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAw
 					XHR4NjE2MFx0eDY3MjBccGFyZGlybmF0dXJh
 					bFxxY1xwYXJ0aWdodGVuZmFjdG9yMAoKXGYw
-					XGZzMjggXGNmMiBQdWJsaXNoIHVwZGF0ZWQg
-					XGNmMiBSZXF1ZXN0fQ==
+					XGZzMjYgXGNmMiBQdWJsaXNoIHVwZGF0ZWQg
+					UmVxdWVzdH0=
 					</data>
 					<key>className</key>
 					<string>ResizeText</string>
@@ -3460,12 +3454,12 @@
 					NTYwMFx0eDYxNjBcdHg2NzIwXHBhcmRpcm5h
 					dHVyYWxccGFydGlnaHRlbmZhY3RvcjAKClxm
 					MFxmczI0IFxjZjIgXGV4cG5kMFxleHBuZHR3
-					MFxrZXJuaW5nMApcdXAwIElEOiAJCQlFUl8x
-					IChzYW1lIFVVSUQgYXMgRUZfMSlcClRpbWVz
-					dGFtcDoJVGltZV8xXApMb2NhdGlvbjoJCVJp
-					Z2h0X0FybVwKUHJhY3RpdGlvbmVyOglTdHVk
-					ZW50XzFcClR5cGU6CQlJbmplY3Rpb25cCkRh
-					dGE6CQkKXGYxIDxpbmplY3Rpb25cCgkgCQkJ
+					MFxrZXJuaW5nMApJRDogCQkJRVJfMSAoc2Ft
+					ZSBVVUlEIGFzIEVGXzEpXApUaW1lc3RhbXA6
+					CVRpbWVfMVwKTG9jYXRpb246CQlSaWdodF9B
+					cm1cClByYWN0aXRpb25lcjoJU3R1ZGVudF8x
+					XApUeXBlOgkJSW5qZWN0aW9uXApEYXRhOgkJ
+					ClxmMSBcY2YyIDxpbmplY3Rpb25cCgkgCQkJ
 					ZHJ1Zz0iXHVjMFx1MTU3IGRydWdfbmFtZSJc
 					CgkgCQkJcXVhbnRpdHk9IjEwIlwKCSAJCQl1
 					bml0cz0iXHVjMFx1MTU3IG1MIlwKCQkJLz59
@@ -3920,7 +3914,7 @@
 					dHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAw
 					XHR4NjE2MFx0eDY3MjBccGFyZGlybmF0dXJh
 					bFxxY1xwYXJ0aWdodGVuZmFjdG9yMAoKXGYw
-					XGZzMzAgXGNmMiBVbnN1YnNjcmliZX0=
+					XGZzMjggXGNmMiBVbnN1YnNjcmliZX0=
 					</data>
 					<key>className</key>
 					<string>ResizeText</string>
@@ -4852,7 +4846,7 @@
 					dHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIw
 					XHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2
 					MFx0eDY3MjBccGFyZGlybmF0dXJhbFxxY1xw
-					YXJ0aWdodGVuZmFjdG9yMAoKXGYwXGZzMjQg
+					YXJ0aWdodGVuZmFjdG9yMAoKXGYwXGZzMjIg
 					XGNmMiBcZXhwbmQwXGV4cG5kdHcwXGtlcm5p
 					bmcwClJlc3BvbmQgdG8gRXZlbnQgXApGcmFn
 					bWVudCB3aXRoIEZyYWdtZW50IFwKQW1lbmRt
@@ -5898,7 +5892,7 @@
 					dHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIw
 					XHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2
 					MFx0eDY3MjBccGFyZGlybmF0dXJhbFxxY1xw
-					YXJ0aWdodGVuZmFjdG9yMAoKXGYwXGZzMjQg
+					YXJ0aWdodGVuZmFjdG9yMAoKXGYwXGZzMjIg
 					XGNmMiBcZXhwbmQwXGV4cG5kdHcwXGtlcm5p
 					bmcwCkFjY2VwdCBcClJlcXVlc3QgfQ==
 					</data>
@@ -6015,7 +6009,7 @@
 					dHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIw
 					XHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2
 					MFx0eDY3MjBccGFyZGlybmF0dXJhbFxxY1xw
-					YXJ0aWdodGVuZmFjdG9yMAoKXGYwXGZzMjQg
+					YXJ0aWdodGVuZmFjdG9yMAoKXGYwXGZzMjIg
 					XGNmMiBcZXhwbmQwXGV4cG5kdHcwXGtlcm5p
 					bmcwClB1Ymxpc2ggY29tcGxldGVkIFwKRXZl
 					bnQgUmVjb3JkfQ==
@@ -6306,7 +6300,7 @@
 			<key>scaleImage</key>
 			<true/>
 			<key>scrollCenterPoint</key>
-			<string>{800, 600}</string>
+			<string>{799.33333333333326, 600}</string>
 			<key>stroke1Color</key>
 			<string></string>
 			<key>stroke1Enabled</key>

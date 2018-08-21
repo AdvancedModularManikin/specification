@@ -406,24 +406,24 @@
         <g>
             <path
                 d="
-                    M1320.00 60.00
-                    L1380.00 60.00
-                    L1380.00 110.00
-                    L1320.00 110.00
+                    M1335.00 65.00
+                    L1366.00 65.00
+                    L1366.00 105.00
+                    L1335.00 105.00
                     Z
                     "
                 fill="none"
                 />
             
             
-            <text x="1327.33" y="80.00"
+            <text x="1342.47" y="80.00"
             >
-                <tspan style="font-family:Helvetica; font-size:17px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Smart
+                <tspan style="font-family:Helvetica; font-size:17px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">IV
                 </tspan>
             </text>
-            <text x="1321.18" y="100.00"
+            <text x="1334.92" y="100.00"
             >
-                <tspan style="font-family:Helvetica; font-size:17px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Syringe</tspan>
+                <tspan style="font-family:Helvetica; font-size:17px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Arm</tspan>
             </text>
         </g>
         
