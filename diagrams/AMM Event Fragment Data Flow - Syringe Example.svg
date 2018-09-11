@@ -1,9 +1,9 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
     "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 800 600"
+<svg width="100%" height="100%" viewBox="0 0 1600 1200"
     version="1.1" xmlns="http://www.w3.org/2000/svg">
-    <g transform="scale(0.5, 0.5)">
+    <g transform="scale(1, 1)">
         
         <!-- ** Line *************** -->
         
@@ -416,14 +416,14 @@
                 />
             
             
-            <text x="1342.47" y="80.00"
+            <text x="1342.94" y="80.00"
             >
-                <tspan style="font-family:Helvetica; font-size:17px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">IV
+                <tspan style="font-family:Helvetica; font-size:16px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">IV
                 </tspan>
             </text>
-            <text x="1334.92" y="100.00"
+            <text x="1335.84" y="99.00"
             >
-                <tspan style="font-family:Helvetica; font-size:17px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Arm</tspan>
+                <tspan style="font-family:Helvetica; font-size:16px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Arm</tspan>
             </text>
         </g>
         
@@ -1051,11 +1051,11 @@
                 <clipPath id="clipPath-DD094DDF-5C80-4396-88D4-480E51BA3E31">
                     <path d="
                         M-10000,-10000 h100000 v100000 h-100000 v-100000
-                        M612.50 770.50
-                        L612.50 775.50
-                        L590.50 775.50
-                        L590.50 765.50
-                        L612.50 765.50
+                        M612.50 710.50
+                        L612.50 715.50
+                        L590.50 715.50
+                        L590.50 705.50
+                        L612.50 705.50
                         Z
                         "
                     clip-rule="evenodd"/>
@@ -1064,8 +1064,8 @@
             
             <path
                 d="
-                    M1350.00 770.00
-                    L600.00 770.00
+                    M1350.00 710.00
+                    L600.00 710.00
                     "
                 clip-path="url(#clipPath-DD094DDF-5C80-4396-88D4-480E51BA3E31)"
                 transform="
@@ -1081,10 +1081,10 @@
             
             <path
                 d="
-                    M611.91 770.50
-                    L611.91 774.91
-                    L601.50 770.50
-                    L611.91 766.09
+                    M611.91 710.50
+                    L611.91 714.91
+                    L601.50 710.50
+                    L611.91 706.09
                     Z
                     "
                 fill="rgb(0, 0, 0)"
@@ -1259,13 +1259,13 @@
         <g>
             <path
                 d="
-                    M950.00 830.00
-                    L1200.00 830.00
-                    L1200.00 987.00
-                    C1200.00 987.00 1169.00 974.00 1138.00 974.00
-                    C1106.00 974.00 1075.00 987.00 1075.00 987.00
-                    C1075.00 987.00 1044.00 1000.00 1013.00 1000.00
-                    C981.00 1000.00 950.00 987.00 950.00 987.00
+                    M950.00 890.00
+                    L1200.00 890.00
+                    L1200.00 1047.00
+                    C1200.00 1047.00 1169.00 1034.00 1138.00 1034.00
+                    C1106.00 1034.00 1075.00 1047.00 1075.00 1047.00
+                    C1075.00 1047.00 1044.00 1060.00 1013.00 1060.00
+                    C981.00 1060.00 950.00 1047.00 950.00 1047.00
                     Z
                     "
                 transform="
@@ -1279,56 +1279,56 @@
                 />
             
             
-            <text x="956.00" y="844.00"
+            <text x="956.00" y="904.00"
             >
                 <tspan style="font-family:ArialMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">ID: 			ER_1 (same UUID as EF_1)
                 </tspan>
             </text>
-            <text x="956.00" y="858.39"
+            <text x="956.00" y="918.39"
             >
                 <tspan style="font-family:ArialMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Timestamp:	Time_1
                 </tspan>
             </text>
-            <text x="956.00" y="872.79"
+            <text x="956.00" y="932.79"
             >
                 <tspan style="font-family:ArialMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Location:		Right_Arm
                 </tspan>
             </text>
-            <text x="956.00" y="887.18"
+            <text x="956.00" y="947.18"
             >
                 <tspan style="font-family:ArialMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Practitioner:	Student_1
                 </tspan>
             </text>
-            <text x="956.00" y="901.57"
+            <text x="956.00" y="961.57"
             >
                 <tspan style="font-family:ArialMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Type:		Injection
                 </tspan>
             </text>
-            <text x="1040.00" y="915.96"
+            <text x="1040.00" y="975.96"
             >
                 <tspan style="font-family:CourierNewPSMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">&lt;injection
                 </tspan>
             </text>
-            <text x="956.00" y="915.96"
+            <text x="956.00" y="975.96"
             >
                 <tspan style="font-family:ArialMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Data:		</tspan>
             </text>
-            <text x="956.00" y="929.96"
+            <text x="956.00" y="989.96"
             >
                 <tspan style="font-family:CourierNewPSMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">	 			drug="drug_name"
                 </tspan>
             </text>
-            <text x="956.00" y="943.96"
+            <text x="956.00" y="1003.96"
             >
                 <tspan style="font-family:CourierNewPSMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">	 			quantity="10"
                 </tspan>
             </text>
-            <text x="956.00" y="957.96"
+            <text x="956.00" y="1017.96"
             >
                 <tspan style="font-family:CourierNewPSMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">	 			units="mL"
                 </tspan>
             </text>
-            <text x="956.00" y="971.96"
+            <text x="956.00" y="1031.96"
             >
                 <tspan style="font-family:CourierNewPSMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">			/></tspan>
             </text>
@@ -1342,11 +1342,11 @@
                 <clipPath id="clipPath-2EBEC0A6-FD5B-4334-8C9D-C5773A6C3BA8">
                     <path d="
                         M-10000,-10000 h100000 v100000 h-100000 v-100000
-                        M938.50 840.50
-                        L938.50 835.50
-                        L960.50 835.50
-                        L960.50 845.50
-                        L938.50 845.50
+                        M938.50 910.50
+                        L938.50 905.50
+                        L960.50 905.50
+                        L960.50 915.50
+                        L938.50 915.50
                         Z
                         "
                     clip-rule="evenodd"/>
@@ -1355,8 +1355,8 @@
             
             <path
                 d="
-                    M180.00 840.00
-                    L950.00 840.00
+                    M180.00 910.00
+                    L950.00 910.00
                     "
                 clip-path="url(#clipPath-2EBEC0A6-FD5B-4334-8C9D-C5773A6C3BA8)"
                 transform="
@@ -1372,10 +1372,10 @@
             
             <path
                 d="
-                    M939.09 840.50
-                    L939.09 836.09
-                    L949.50 840.50
-                    L939.09 844.91
+                    M939.09 910.50
+                    L939.09 906.09
+                    L949.50 910.50
+                    L939.09 914.91
                     Z
                     "
                 fill="rgb(0, 0, 0)"
@@ -1392,17 +1392,17 @@
         <g>
             <path
                 d="
-                    M210.00 820.00
-                    L260.00 820.00
-                    L260.00 840.00
-                    L210.00 840.00
+                    M210.00 890.00
+                    L260.00 890.00
+                    L260.00 910.00
+                    L210.00 910.00
                     Z
                     "
                 fill="none"
                 />
             
             
-            <text x="210.40" y="834.00"
+            <text x="210.40" y="904.00"
             >
                 <tspan style="font-family:ArialMT; font-size:15px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Publish</tspan>
             </text>
@@ -1416,11 +1416,11 @@
                 <clipPath id="clipPath-32BC990F-36AC-4B44-A0AD-1432E340B868">
                     <path d="
                         M-10000,-10000 h100000 v100000 h-100000 v-100000
-                        M608.50 880.50
-                        L608.50 875.50
-                        L630.50 875.50
-                        L630.50 885.50
-                        L608.50 885.50
+                        M608.50 950.50
+                        L608.50 945.50
+                        L630.50 945.50
+                        L630.50 955.50
+                        L608.50 955.50
                         Z
                         "
                     clip-rule="evenodd"/>
@@ -1429,8 +1429,8 @@
             
             <path
                 d="
-                    M180.00 880.00
-                    L620.00 880.00
+                    M180.00 950.00
+                    L620.00 950.00
                     "
                 clip-path="url(#clipPath-32BC990F-36AC-4B44-A0AD-1432E340B868)"
                 transform="
@@ -1446,10 +1446,10 @@
             
             <path
                 d="
-                    M609.09 880.50
-                    L609.09 876.09
-                    L619.50 880.50
-                    L609.09 884.91
+                    M609.09 950.50
+                    L609.09 946.09
+                    L619.50 950.50
+                    L609.09 954.91
                     Z
                     "
                 fill="rgb(0, 0, 0)"
@@ -1466,17 +1466,17 @@
         <g>
             <path
                 d="
-                    M204.00 861.00
-                    L287.00 861.00
-                    L287.00 878.00
-                    L204.00 878.00
+                    M204.00 931.00
+                    L287.00 931.00
+                    L287.00 948.00
+                    L204.00 948.00
                     Z
                     "
                 fill="none"
                 />
             
             
-            <text x="206.59" y="873.00"
+            <text x="206.59" y="943.00"
             >
                 <tspan style="font-family:ArialMT; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Unsubscribe</tspan>
             </text>
@@ -1879,17 +1879,17 @@
                 <clipPath id="clipPath-13BC3C9D-CA34-4A99-80D6-35166D3163F4">
                     <path d="
                         M-10000,-10000 h100000 v100000 h-100000 v-100000
-                        M1210.50 850.50
-                        L1210.50 856.50
-                        L1192.50 856.50
-                        L1192.50 844.50
-                        L1210.50 844.50
+                        M1210.50 910.50
+                        L1210.50 916.50
+                        L1192.50 916.50
+                        L1192.50 904.50
+                        L1210.50 904.50
                         Z
-                        M1338.50 850.50
-                        L1338.50 845.50
-                        L1360.50 845.50
-                        L1360.50 855.50
-                        L1338.50 855.50
+                        M1338.50 910.50
+                        L1338.50 905.50
+                        L1360.50 905.50
+                        L1360.50 915.50
+                        L1338.50 915.50
                         Z
                         "
                     clip-rule="evenodd"/>
@@ -1898,8 +1898,8 @@
             
             <path
                 d="
-                    M1200.00 850.00
-                    L1350.00 850.00
+                    M1200.00 910.00
+                    L1350.00 910.00
                     "
                 clip-path="url(#clipPath-13BC3C9D-CA34-4A99-80D6-35166D3163F4)"
                 transform="
@@ -1915,10 +1915,10 @@
             
             <path
                 d="
-                    M1210.50 856.50
-                    L1200.50 856.50
-                    L1200.50 844.50
-                    L1210.50 844.50
+                    M1210.50 916.50
+                    L1200.50 916.50
+                    L1200.50 904.50
+                    L1210.50 904.50
                     Z
                     "
                 fill="rgb(0, 0, 0)"
@@ -1930,10 +1930,10 @@
             
             <path
                 d="
-                    M1339.09 850.50
-                    L1339.09 846.09
-                    L1349.50 850.50
-                    L1339.09 854.91
+                    M1339.09 910.50
+                    L1339.09 906.09
+                    L1349.50 910.50
+                    L1339.09 914.91
                     Z
                     "
                 fill="rgb(0, 0, 0)"
@@ -1952,11 +1952,11 @@
                 <clipPath id="clipPath-F801F9F3-3E4C-4538-A631-D1D061354251">
                     <path d="
                         M-10000,-10000 h100000 v100000 h-100000 v-100000
-                        M1363.00 1050.96
-                        L1363.02 1055.96
-                        L1341.02 1056.04
-                        L1340.98 1046.04
-                        L1362.98 1045.96
+                        M1363.00 1070.96
+                        L1363.02 1075.96
+                        L1341.02 1076.04
+                        L1340.98 1066.04
+                        L1362.98 1065.96
                         Z
                         "
                     clip-rule="evenodd"/>
@@ -1965,9 +1965,9 @@
             
             <path
                 d="
-                    M1350.00 850.00
-                    C1350.00 850.00 1490.00 850.00 1490.00 950.00
-                    C1490.00 1050.00 1350.00 1050.00 1350.00 1050.00
+                    M1350.00 910.00
+                    C1350.00 910.00 1490.00 910.00 1490.00 990.00
+                    C1490.00 1070.00 1350.00 1070.00 1350.00 1070.00
                     "
                 clip-path="url(#clipPath-F801F9F3-3E4C-4538-A631-D1D061354251)"
                 transform="
@@ -1983,10 +1983,10 @@
             
             <path
                 d="
-                    M1362.41 1050.96
-                    L1362.43 1055.37
-                    L1352.00 1051.00
-                    L1362.40 1046.54
+                    M1362.41 1070.96
+                    L1362.43 1075.37
+                    L1352.00 1071.00
+                    L1362.40 1066.54
                     Z
                     "
                 fill="rgb(0, 0, 0)"
@@ -2003,17 +2003,17 @@
         <g>
             <path
                 d="
-                    M1250.00 750.00
-                    L1330.00 750.00
-                    L1330.00 770.00
-                    L1250.00 770.00
+                    M1250.00 690.00
+                    L1330.00 690.00
+                    L1330.00 710.00
+                    L1250.00 710.00
                     Z
                     "
                 fill="none"
                 />
             
             
-            <text x="1251.09" y="764.00"
+            <text x="1251.09" y="704.00"
             >
                 <tspan style="font-family:ArialMT; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Unsubscribe</tspan>
             </text>
@@ -2027,11 +2027,11 @@
                 <clipPath id="clipPath-AAE54A6E-AC5E-43A4-8502-1E6C150638D1">
                     <path d="
                         M-10000,-10000 h100000 v100000 h-100000 v-100000
-                        M1363.00 770.96
-                        L1363.02 775.96
-                        L1341.02 776.03
-                        L1340.98 766.03
-                        L1362.98 765.96
+                        M1363.00 710.88
+                        L1363.05 715.88
+                        L1341.05 716.10
+                        L1340.95 706.10
+                        L1362.95 705.88
                         Z
                         "
                     clip-rule="evenodd"/>
@@ -2041,8 +2041,8 @@
             <path
                 d="
                     M1350.00 670.00
-                    C1350.00 670.00 1500.00 670.00 1500.00 720.00
-                    C1500.00 770.00 1350.00 770.00 1350.00 770.00
+                    C1350.00 670.00 1400.00 670.00 1400.00 690.00
+                    C1400.00 710.00 1350.00 710.00 1350.00 710.00
                     "
                 clip-path="url(#clipPath-AAE54A6E-AC5E-43A4-8502-1E6C150638D1)"
                 transform="
@@ -2058,10 +2058,10 @@
             
             <path
                 d="
-                    M1362.41 770.96
-                    L1362.43 775.38
-                    L1352.00 771.00
-                    L1362.40 766.55
+                    M1362.41 710.88
+                    L1362.46 715.30
+                    L1352.00 710.99
+                    L1362.37 706.47
                     Z
                     "
                 fill="rgb(0, 0, 0)"
@@ -2078,32 +2078,32 @@
         <g>
             <path
                 d="
-                    M1362.00 701.00
-                    L1489.00 701.00
-                    L1489.00 759.00
-                    L1362.00 759.00
+                    M1362.00 611.00
+                    L1489.00 611.00
+                    L1489.00 669.00
+                    L1362.00 669.00
                     Z
                     "
                 fill="none"
                 />
             
             
-            <text x="1363.13" y="711.00"
+            <text x="1363.13" y="621.00"
             >
                 <tspan style="font-family:ArialMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Request was accepted:
                 </tspan>
             </text>
-            <text x="1362.12" y="725.39"
+            <text x="1362.12" y="635.39"
             >
                 <tspan style="font-family:ArialMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">No longer need to listen
                 </tspan>
             </text>
-            <text x="1377.14" y="739.79"
+            <text x="1377.14" y="649.79"
             >
                 <tspan style="font-family:ArialMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">for potential Event
                 </tspan>
             </text>
-            <text x="1396.82" y="754.18"
+            <text x="1396.82" y="664.18"
             >
                 <tspan style="font-family:ArialMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Fragments</tspan>
             </text>
@@ -2170,11 +2170,11 @@
                 <clipPath id="clipPath-715C3B16-0584-4566-889A-0A30F1D817DD">
                     <path d="
                         M-10000,-10000 h100000 v100000 h-100000 v-100000
-                        M169.00 840.95
-                        L169.02 835.95
-                        L191.02 836.04
-                        L190.98 846.04
-                        L168.98 845.95
+                        M169.00 730.95
+                        L169.02 725.95
+                        L191.02 726.05
+                        L190.98 736.05
+                        L168.98 735.95
                         Z
                         "
                     clip-rule="evenodd"/>
@@ -2184,8 +2184,8 @@
             <path
                 d="
                     M180.00 500.00
-                    C180.00 500.00 60.00 500.00 60.00 670.00
-                    C60.00 840.00 180.00 840.00 180.00 840.00
+                    C180.00 500.00 70.00 500.00 70.00 615.00
+                    C70.00 730.00 180.00 730.00 180.00 730.00
                     "
                 clip-path="url(#clipPath-715C3B16-0584-4566-889A-0A30F1D817DD)"
                 transform="
@@ -2201,10 +2201,10 @@
             
             <path
                 d="
-                    M169.59 840.95
-                    L169.60 836.54
-                    L180.00 841.00
-                    L169.57 845.37
+                    M169.59 730.95
+                    L169.61 726.53
+                    L180.00 731.00
+                    L169.57 735.36
                     Z
                     "
                 fill="rgb(0, 0, 0)"
@@ -2221,22 +2221,22 @@
         <g>
             <path
                 d="
-                    M116.00 567.00
-                    L164.00 567.00
-                    L164.00 596.00
-                    L116.00 596.00
+                    M120.00 660.00
+                    L168.00 660.00
+                    L168.00 689.00
+                    L120.00 689.00
                     Z
                     "
                 fill="none"
                 />
             
             
-            <text x="123.19" y="578.00"
+            <text x="127.19" y="671.00"
             >
                 <tspan style="font-family:ArialMT; font-size:11px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Accept
                 </tspan>
             </text>
-            <text x="119.51" y="590.36"
+            <text x="123.51" y="683.36"
             >
                 <tspan style="font-family:ArialMT; font-size:11px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Request </tspan>
             </text>
@@ -2248,22 +2248,22 @@
         <g>
             <path
                 d="
-                    M70.00 710.00
-                    L171.00 710.00
-                    L171.00 739.00
-                    L70.00 739.00
+                    M70.00 910.00
+                    L171.00 910.00
+                    L171.00 939.00
+                    L70.00 939.00
                     Z
                     "
                 fill="none"
                 />
             
             
-            <text x="75.56" y="721.00"
+            <text x="75.56" y="921.00"
             >
                 <tspan style="font-family:ArialMT; font-size:11px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Publish completed
                 </tspan>
             </text>
-            <text x="87.18" y="733.36"
+            <text x="87.18" y="933.36"
             >
                 <tspan style="font-family:ArialMT; font-size:11px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Event Record</tspan>
             </text>
@@ -2275,34 +2275,277 @@
         <g>
             <path
                 d="
-                    M1360.00 930.00
-                    L1483.00 930.00
-                    L1483.00 988.00
-                    L1360.00 988.00
+                    M1360.00 970.00
+                    L1483.00 970.00
+                    L1483.00 1028.00
+                    L1360.00 1028.00
                     Z
                     "
                 fill="none"
                 />
             
             
-            <text x="1369.47" y="940.00"
+            <text x="1369.47" y="980.00"
             >
                 <tspan style="font-family:ArialMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Publish Physiology,
                 </tspan>
             </text>
-            <text x="1360.15" y="954.39"
+            <text x="1360.15" y="994.39"
             >
                 <tspan style="font-family:ArialMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Assessment, &amp; Display
                 </tspan>
             </text>
-            <text x="1369.80" y="968.79"
+            <text x="1369.80" y="1008.79"
             >
                 <tspan style="font-family:ArialMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">data as appropriate
                 </tspan>
             </text>
-            <text x="1386.48" y="983.18"
+            <text x="1386.48" y="1023.18"
             >
                 <tspan style="font-family:ArialMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">for this Event</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Swoosh *************** -->
+        
+        <g>
+            <path
+                d="
+                    M330.00 720.00
+                    L580.00 720.00
+                    L580.00 877.00
+                    C580.00 877.00 549.00 864.00 518.00 864.00
+                    C486.00 864.00 455.00 877.00 455.00 877.00
+                    C455.00 877.00 424.00 890.00 393.00 890.00
+                    C361.00 890.00 330.00 877.00 330.00 877.00
+                    Z
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(179, 179, 179)"
+                stroke-width="1.00"
+                stroke-linecap="butt"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <text x="336.00" y="734.00"
+            >
+                <tspan style="font-family:ArialMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">ID: 			EF_1 (UUID)
+                </tspan>
+            </text>
+            <text x="336.00" y="748.39"
+            >
+                <tspan style="font-family:ArialMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Timestamp:	Time_1
+                </tspan>
+            </text>
+            <text x="481.34" y="762.79"
+            >
+                <tspan style="font-family:ArialMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">
+                </tspan>
+            </text>
+            <text x="420.00" y="762.79"
+            >
+                <tspan style="font-family:Arial-BoldMT; font-size:12px; font-style:normal; font-weight:bold;" fill="rgb(0, 0, 0)">Right_Arm</tspan>
+            </text>
+            <text x="336.00" y="762.79"
+            >
+                <tspan style="font-family:ArialMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Location:		</tspan>
+            </text>
+            <text x="336.00" y="777.18"
+            >
+                <tspan style="font-family:ArialMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Practitioner:	Student_1
+                </tspan>
+            </text>
+            <text x="336.00" y="791.57"
+            >
+                <tspan style="font-family:ArialMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Type:		Injection
+                </tspan>
+            </text>
+            <text x="420.00" y="805.96"
+            >
+                <tspan style="font-family:CourierNewPSMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">&lt;injection
+                </tspan>
+            </text>
+            <text x="336.00" y="805.96"
+            >
+                <tspan style="font-family:ArialMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Data:		</tspan>
+            </text>
+            <text x="336.00" y="819.96"
+            >
+                <tspan style="font-family:CourierNewPSMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">	 			drug="drug_name"
+                </tspan>
+            </text>
+            <text x="336.00" y="833.96"
+            >
+                <tspan style="font-family:CourierNewPSMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">	 			quantity="10"
+                </tspan>
+            </text>
+            <text x="336.00" y="847.96"
+            >
+                <tspan style="font-family:CourierNewPSMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">	 			units="mL"
+                </tspan>
+            </text>
+            <text x="336.00" y="861.96"
+            >
+                <tspan style="font-family:CourierNewPSMT; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">			/></tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-ECF901A8-6F92-4912-AD94-5CBC0E3C7575">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M318.50 730.50
+                        L318.50 725.50
+                        L340.50 725.50
+                        L340.50 735.50
+                        L318.50 735.50
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M180.00 730.00
+                    L330.00 730.00
+                    "
+                clip-path="url(#clipPath-ECF901A8-6F92-4912-AD94-5CBC0E3C7575)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="butt"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M319.09 730.50
+                    L319.09 726.09
+                    L329.50 730.50
+                    L319.09 734.91
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M210.00 710.00
+                    L260.00 710.00
+                    L260.00 730.00
+                    L210.00 730.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="210.40" y="724.00"
+            >
+                <tspan style="font-family:ArialMT; font-size:15px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Publish</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Bezier Shape *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-A0CEFF94-FBFC-4660-B013-035ACE97BE75">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M169.71 906.93
+                        L171.41 902.22
+                        L192.10 909.69
+                        L188.71 919.10
+                        L168.02 911.63
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M180.00 500.00
+                    C180.00 500.00 50.00 496.58 50.00 680.00
+                    C50.00 863.42 180.00 910.00 180.00 910.00
+                    "
+                clip-path="url(#clipPath-A0CEFF94-FBFC-4660-B013-035ACE97BE75)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M170.26 907.13
+                    L171.76 902.97
+                    L180.06 910.66
+                    L168.77 911.28
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M90.00 740.00
+                    L172.00 740.00
+                    L172.00 765.00
+                    L90.00 765.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="91.55" y="749.00"
+            >
+                <tspan style="font-family:ArialMT; font-size:11px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Publish updated
+                </tspan>
+            </text>
+            <text x="91.87" y="761.36"
+            >
+                <tspan style="font-family:ArialMT; font-size:11px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Event Fragment</tspan>
             </text>
         </g>
         
