@@ -28,6 +28,7 @@
   <xs:attributeGroup name="CapabilityAttributes">
     <xs:attribute type="xs:string" name="type" use="required"/>
     <xs:attribute type="xs:string" name="location" use="optional"/>
+    <!-- Add additional attributes as their identified in AMM Capability Types Glossary -->
   </xs:attributeGroup>
   <xs:complexType name="TopicsType">
     <xs:sequence>
@@ -130,21 +131,25 @@
     <xs:attribute type="xs:string" name="unit" use="required"/>
   </xs:complexType>
   <xs:attributeGroup name="EventAttributes">
+    <!-- 'match' attribute defines whether the module requires a matching publisher/subscriber during operation -->
     <xs:attribute type="MatchType" name="match" default="optional"/>
     <!-- TODO: Change from generic string to enum generated from Event Record Types Glossary -->
     <xs:attribute type="xs:string" name="type" use="required"/>
   </xs:attributeGroup>
   <xs:attributeGroup name="PhysiologyDataAttributes">
+    <!-- 'match' attribute defines whether the module requires a matching publisher/subscriber during operation -->
     <xs:attribute type="MatchType" name="match" default="optional"/>
     <!-- TODO: Change from generic string to enum generated from CDM data -->
     <xs:attribute type="xs:string" name="name" use="required"/>
   </xs:attributeGroup>
   <xs:attributeGroup name="PhysiologyModificationsAttributes">
+    <!-- 'match' attribute defines whether the module requires a matching publisher/subscriber during operation -->
     <xs:attribute type="MatchType" name="match" default="optional"/>
     <!-- TODO: Change from generic string to enum generated from CDM data -->
     <xs:attribute type="xs:string" name="type" use="required"/>
   </xs:attributeGroup>
   <xs:attributeGroup name="RenderModificationAttributes">
+    <!-- 'match' attribute defines whether the module requires a matching publisher/subscriber during operation -->
     <xs:attribute type="MatchType" name="match" default="optional"/>
     <!-- TODO: Change from generic string to enum generated from Render Modification Types Glossary -->
     <xs:attribute type="xs:string" name="type" use="required"/>
@@ -197,6 +202,8 @@
     <xs:choice>
       <xs:element name="hex" type="xs:hexBinary"/>
       <xs:element name="base64" type="xs:base64Binary"/>
+      <!-- If configuration isn't binary, modules should create an XML Schema of the configuration options in order to
+        facilitate future tooling, when feasible. -->
       <xs:any namespace="##other" processContents="lax"/>
     </xs:choice>
     <xs:attributeGroup ref="CapabilityAttributes"/>
