@@ -8,7 +8,7 @@
     <xs:sequence>
       <xs:element type="BaselinePoEPowerType" name="BaselinePoEPower" minOccurs="0"/>
       <xs:element type="CapabilityType" name="Capability" maxOccurs="unbounded"/>
-      <xs:element type="ConfigurationType" name="Configuration"/>
+      <xs:element type="ConfigurationType" name="Configuration" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="BaselinePoEPowerType">
