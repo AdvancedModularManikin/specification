@@ -8,6 +8,7 @@
     <xs:sequence>
       <xs:element type="BaselinePoEPowerType" name="BaselinePoEPower" minOccurs="0"/>
       <xs:element type="CapabilityType" name="Capability" maxOccurs="unbounded"/>
+      <xs:element type="ConfigurationType" name="Configuration"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="BaselinePoEPowerType">
@@ -20,12 +21,14 @@
       <xs:element type="TopicsType" name="Publications"/>
       <xs:element type="AssessmentsType" name="Assessments"/>
       <xs:element type="ResourcesType" name="Resources" />
-      <xs:element type="ConfigurationType" name="Configuration"/>
     </xs:sequence>
-    <xs:attribute type="xs:string" name="type" use="required"/>
-    <xs:attribute type="xs:string" name="location" use="optional"/>
+    <xs:attributeGroup ref="CapabilityAttributes"/>
     <xs:anyAttribute/>
   </xs:complexType>
+  <xs:attributeGroup name="CapabilityAttributes">
+    <xs:attribute type="xs:string" name="type" use="required"/>
+    <xs:attribute type="xs:string" name="location" use="optional"/>
+  </xs:attributeGroup>
   <xs:complexType name="TopicsType">
     <xs:sequence>
       <xs:element type="AssessmentType" name="Assessment" maxOccurs="unbounded" minOccurs="0"/>
@@ -58,14 +61,6 @@
       <xs:element type="RequirementType" name="Requirement" maxOccurs="unbounded" minOccurs="0"/>
       <xs:element type="SupplyType" name="Supply" maxOccurs="unbounded" minOccurs="0"/>
     </xs:sequence>
-    <xs:anyAttribute/>
-  </xs:complexType>
-  <xs:complexType name="ConfigurationType"><!-- Done? -->
-    <xs:choice>
-      <xs:element name="hex" type="xs:hexBinary"/>
-      <xs:element name="base64" type="xs:base64Binary"/>
-      <xs:any namespace="##other" processContents="lax"/>
-    </xs:choice>
     <xs:anyAttribute/>
   </xs:complexType>
   <xs:complexType name="AssessmentType">
@@ -193,4 +188,18 @@
       <xs:enumeration value="Compressed Air"/>
     </xs:restriction>
   </xs:simpleType>
+  <xs:complexType name="ConfigurationType">
+    <xs:sequence>
+      <xs:element type="CapabilityConfigurationType" name="Capability" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CapabilityConfigurationType">
+    <xs:choice>
+      <xs:element name="hex" type="xs:hexBinary"/>
+      <xs:element name="base64" type="xs:base64Binary"/>
+      <xs:any namespace="##other" processContents="lax"/>
+    </xs:choice>
+    <xs:attributeGroup ref="CapabilityAttributes"/>
+    <xs:anyAttribute/>
+  </xs:complexType>
 </xs:schema>
