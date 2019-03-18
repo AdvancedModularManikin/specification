@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="urn:advancedmodularmanikin"
+           xmlns="urn:advancedmodularmanikin"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+  <xs:element name="CapabilitiesSchema" type="CapabilitiesSchemaType"/>
+  <xs:complexType name="CapabilitiesSchemaType">
+    <xs:sequence>
+      <xs:element type="BaselinePoEPowerType" name="BaselinePoEPower" minOccurs="0"/>
+      <xs:element type="CapabilityType" name="Capability" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BaselinePoEPowerType">
+    <xs:attribute type="xs:decimal" name="nominal" use="required"/>
+    <xs:attribute type="xs:string" name="unit" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="CapabilityType">
+    <xs:sequence>
+      <xs:element type="TopicsType" name="Subscriptions"/>
+      <xs:element type="TopicsType" name="Publications"/>
+      <xs:element type="AssessmentsType" name="Assessments"/>
+      <xs:element type="ResourcesType" name="Resources" />
+      <xs:element type="ConfigurationType" name="Configuration"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="type" use="required"/>
+    <xs:attribute type="xs:string" name="location" use="optional"/>
+    <xs:anyAttribute/>
+  </xs:complexType>
+  <xs:complexType name="TopicsType">
+    <xs:sequence>
+      <xs:element type="AssessmentType" name="Assessment" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="EventFragmentType" name="EventFragment" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="EventRecordType" name="EventRecord" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="FragmentAmendmentRequestType" name="FragmentAmendmentRequest" maxOccurs="unbounded"
+                  minOccurs="0"/>
+      <xs:element type="LogType" name="Log" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="ModuleConfigurationType" name="ModuleConfiguration" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="OmittedEventType" name="OmittedEvent" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="OperationalDescriptionType" name="OperationalDescription" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="PhysiologyModificationType" name="PhysiologyModification" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="PhysiologyValueType" name="PhysiologyValue" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="PhysiologyWaveformType" name="PhysiologyWaveform" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="RenderModificationType" name="RenderModification" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="SimulationControlType" name="SimulationControl" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="StatusType" name="Status" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:any namespace="##other" processContents="lax" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:anyAttribute/>
+  </xs:complexType>
+  <xs:complexType name="AssessmentsType">
+    <xs:sequence>
+      <xs:element type="EventRecordType" name="EventRecord" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:anyAttribute/>
+  </xs:complexType>
+  <xs:complexType name="ResourcesType" mixed="true">
+    <xs:sequence>
+      <xs:element type="RequirementType" name="Requirement" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="SupplyType" name="Supply" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:anyAttribute/>
+  </xs:complexType>
+  <xs:complexType name="ConfigurationType"><!-- Done? -->
+    <xs:choice>
+      <xs:element name="hex" type="xs:hexBinary"/>
+      <xs:element name="base64" type="xs:base64Binary"/>
+      <xs:any namespace="##other" processContents="lax"/>
+    </xs:choice>
+    <xs:anyAttribute/>
+  </xs:complexType>
+  <xs:complexType name="AssessmentType">
+    <xs:anyAttribute/>
+  </xs:complexType>
+  <xs:complexType name="EventFragmentType">
+    <xs:attributeGroup ref="EventAttributes"/>
+    <xs:anyAttribute/>
+  </xs:complexType>
+  <xs:complexType name="EventRecordType">
+    <xs:attributeGroup ref="EventAttributes"/>
+    <xs:anyAttribute/>
+  </xs:complexType>
+  <xs:complexType name="FragmentAmendmentRequestType">
+    <xs:attributeGroup ref="EventAttributes"/>
+    <xs:anyAttribute/>
+  </xs:complexType>
+  <xs:complexType name="LogType">
+    <xs:attribute type="LogLevel" name="level" use="optional"/>
+    <xs:anyAttribute/>
+  </xs:complexType>
+  <xs:complexType name="ModuleConfigurationType">
+    <xs:anyAttribute/>
+  </xs:complexType>
+  <xs:complexType name="OmittedEventType">
+    <xs:attributeGroup ref="EventAttributes"/>
+  </xs:complexType>
+  <xs:complexType name="OperationalDescriptionType">
+    <xs:anyAttribute/>
+  </xs:complexType>
+  <xs:complexType name="PhysiologyModificationType">
+    <xs:attributeGroup ref="PhysiologyModificationsAttributes"/>
+    <xs:anyAttribute/>
+  </xs:complexType>
+  <xs:complexType name="PhysiologyValueType">
+    <xs:attributeGroup ref="PhysiologyDataAttributes"/>
+    <xs:anyAttribute/>
+  </xs:complexType>
+  <xs:complexType name="PhysiologyWaveformType">
+    <xs:attributeGroup ref="PhysiologyDataAttributes"/>
+    <xs:anyAttribute/>
+  </xs:complexType>
+  <xs:complexType name="RenderModificationType">
+    <xs:attributeGroup ref="RenderModificationAttributes"/>
+    <xs:anyAttribute/>
+  </xs:complexType>
+  <xs:complexType name="SimulationControlType">
+    <xs:attribute type="ControlType" name="type" use="optional"/>
+    <xs:anyAttribute/>
+  </xs:complexType>
+  <xs:complexType name="StatusType">
+    <xs:attribute type="StatusValue" name="value" use="optional"/>
+    <!-- TODO: Change from generic string to enum generated from Capability Types Glossary -->
+    <xs:attribute type="xs:string" name="capability" use="required"/>
+    <xs:anyAttribute/>
+  </xs:complexType>
+  <xs:complexType name="RequirementType">
+    <xs:attribute type="ResourceType" name="type" use="required"/>
+    <xs:attribute type="xs:string" name="peak" use="optional"/>
+    <xs:attribute type="xs:string" name="nominal" use="required"/>
+    <xs:attribute type="xs:string" name="unit" use="required"/>
+    <xs:anyAttribute/>
+  </xs:complexType>
+  <xs:complexType name="SupplyType">
+    <xs:attribute type="ResourceType" name="type" use="required"/>
+    <xs:attribute type="xs:string" name="capacity" use="required"/>
+    <xs:attribute type="xs:string" name="unit" use="required"/>
+  </xs:complexType>
+  <xs:attributeGroup name="EventAttributes">
+    <xs:attribute type="MatchType" name="match" default="optional"/>
+    <!-- TODO: Change from generic string to enum generated from Event Record Types Glossary -->
+    <xs:attribute type="xs:string" name="type" use="required"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="PhysiologyDataAttributes">
+    <xs:attribute type="MatchType" name="match" default="optional"/>
+    <!-- TODO: Change from generic string to enum generated from CDM data -->
+    <xs:attribute type="xs:string" name="name" use="required"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="PhysiologyModificationsAttributes">
+    <xs:attribute type="MatchType" name="match" default="optional"/>
+    <!-- TODO: Change from generic string to enum generated from CDM data -->
+    <xs:attribute type="xs:string" name="type" use="required"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="RenderModificationAttributes">
+    <xs:attribute type="MatchType" name="match" default="optional"/>
+    <!-- TODO: Change from generic string to enum generated from Render Modification Types Glossary -->
+    <xs:attribute type="xs:string" name="type" use="required"/>
+  </xs:attributeGroup>
+  <xs:simpleType name="MatchType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="required"/>
+      <xs:enumeration value="optional"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="LogLevel">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="FATAL"/>
+      <xs:enumeration value="ERROR"/>
+      <xs:enumeration value="WARN"/>
+      <xs:enumeration value="INFO"/>
+      <xs:enumeration value="DEBUG"/>
+      <xs:enumeration value="TRACE"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ControlType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="RUN"/>
+      <xs:enumeration value="PAUSE"/>
+      <xs:enumeration value="END"/>
+      <xs:enumeration value="SAVE"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StatusValue">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="OPERATIONAL"/>
+      <xs:enumeration value="INOPERATIVE"/>
+      <xs:enumeration value="EXIGENT"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ResourceType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Power"/>
+      <xs:enumeration value="Blood Simulant"/>
+      <xs:enumeration value="Clear Liquid"/>
+      <xs:enumeration value="Compressed Air"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

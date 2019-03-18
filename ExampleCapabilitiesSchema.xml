@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CapabilitiesSchema xmlns="urn:advancedmodularmanikin"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="urn:advancedmodularmanikin schema/CapabilitiesSchema.xsd">
+    <BaselinePoEPower nominal="5" unit="W"/>
+
+    <Capability type="Pulse" location="FMAID for left radial pulse">
+        <Subscriptions>
+            <PhysiologyValue name="PulsePressure" match="required"/>
+        </Subscriptions>
+        <Publications>
+            <EventRecord type="Palpate"/>
+            <PhysiologyModification type="Pain Stimulus"/>
+        </Publications>
+        <Assessments>
+            <EventRecord type="palpate"/>
+        </Assessments>
+        <Resources>
+            <Requirement type="Power" peak="42" nominal="4.2" unit="W"/>
+        </Resources>
+        <Configuration>
+            <xs:schema targetNamespace="urn:advancedmodularmanikin"
+                       xmlns="urn:advancedmodularmanikin"
+                       xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                       elementFormDefault="qualified">
+                <xs:element name="enable" type="xs:boolean">
+                    <xs:annotation>
+                        <xs:appinfo>Usage:</xs:appinfo>
+                        <xs:documentation xml:lang="en">
+                            Enable left radial pulse functionality
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:schema>
+        </Configuration>
+    </Capability>
+
+    <Capability type="Iv Access" location="FMAID for left forearm">
+        <Subscriptions>
+            <EventFragment type="Substance Bolus"/>
+            <EventFragment type="Substance Infusion"/>
+            <EventFragment type="Substance Compound Infusion"/>
+            <EventRecord type="Substance Bolus"/>
+            <EventRecord type="Substance Infusion"/>
+            <EventRecord type="Substance Compound Infusion"/>
+            <PhysiologyValue name="ArterialPressure" match="required"/>
+        </Subscriptions>
+        <Publications>
+            <EventRecord type="IV Access"/>
+            <PhysiologyModification type="Pain Stimulus"/>
+            <PhysiologyModification type="Substance Bolus"/>
+            <PhysiologyModification type="Substance Infusion"/>
+            <PhysiologyModification type="Substance Compound Infusion"/>
+            <RenderModification type="IV Access"/>
+        </Publications>
+        <Assessments>
+            <EventRecord type="IV Access"/>
+        </Assessments>
+        <Resources>
+            <!-- No additional resources required -->
+        </Resources>
+        <Configuration>
+            <xs:schema targetNamespace="urn:advancedmodularmanikin"
+                       xmlns="urn:advancedmodularmanikin"
+                       xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                       elementFormDefault="qualified">
+                <xs:element name="enable" type="xs:boolean">
+                    <xs:annotation>
+                        <xs:appinfo>Usage:</xs:appinfo>
+                        <xs:documentation xml:lang="en">
+                            Enable left forearm IV access functionality
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="state" default="0">
+                    <xs:annotation>
+                        <xs:appinfo>Note:</xs:appinfo>
+                        <xs:documentation>
+                            Used to save and restore internal state
+                        </xs:documentation>
+                    </xs:annotation>
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:minInclusive value="0"/>
+                            <xs:maxInclusive value="7"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:schema>
+        </Configuration>
+    </Capability>
+</CapabilitiesSchema>
