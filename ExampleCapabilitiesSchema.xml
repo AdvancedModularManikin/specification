@@ -42,7 +42,8 @@
             <EventRecord type="IV Access"/>
         </Assessments>
         <Resources>
-            <!-- No additional resources required -->
+            <!-- For blood draw -->
+            <Requirement type="Blood Simulant" nominal="0" peak="10" unit="ml/s"/>
         </Resources>
     </Capability>
 
