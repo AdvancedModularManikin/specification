@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CapabilitiesSchema xmlns="urn:advancedmodularmanikin"
+<CapabilitiesSchema xmlns="urn:AdvancedModularManikin"
                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                    xsi:schemaLocation="urn:advancedmodularmanikin schema/CapabilitiesSchema.xsd">
+                    xsi:schemaLocation="urn:AdvancedModularManikin schema/CapabilitiesSchema.xsd">
     <BaselinePoEPower nominal="5" unit="W"/>
 
     <Capability type="Pulse" location="FMAID for left radial pulse">
@@ -49,8 +49,8 @@
 
     <Configuration>
         <Capability type="Pulse" location="FMAID for left radial pulse">
-            <xs:schema targetNamespace="urn:advancedmodularmanikin"
-                       xmlns="urn:advancedmodularmanikin"
+            <xs:schema targetNamespace="urn:AdvancedModularManikin"
+                       xmlns="urn:AdvancedModularManikin"
                        xmlns:xs="http://www.w3.org/2001/XMLSchema"
                        elementFormDefault="qualified">
                 <xs:element name="enable" type="xs:boolean">
@@ -64,8 +64,8 @@
             </xs:schema>
         </Capability>
         <Capability type="Iv Access" location="FMAID for left forearm">
-            <xs:schema targetNamespace="urn:advancedmodularmanikin"
-                       xmlns="urn:advancedmodularmanikin"
+            <xs:schema targetNamespace="urn:AdvancedModularManikin"
+                       xmlns="urn:AdvancedModularManikin"
                        xmlns:xs="http://www.w3.org/2001/XMLSchema"
                        elementFormDefault="qualified">
                 <xs:element name="enable" type="xs:boolean">
