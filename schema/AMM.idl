@@ -22,7 +22,6 @@ module AMM
         /** QoS:
          *  Reliability: Reliable
          *  Durability: Transient Local
-         *  Partition: AdvancedModularManikin
          */
     {
         UUID id;
@@ -35,7 +34,6 @@ module AMM
         /** QoS:
          *  Reliability: Reliable
          *  Durability: Volatile
-         *  Partition: AdvancedModularManikin
          */
     {
         UUID id;
@@ -51,7 +49,6 @@ module AMM
          *  Reliability: Reliable
          *  Durability: Transient Local (In case of module disconnect/reconnect)
          *  Liveliness: Automatic, 1 second lease
-         *  Partition: AdvancedModularManikin
          */
     {
         UUID id;
@@ -71,7 +68,6 @@ module AMM
         /** QoS:
          *  Reliability: Reliable
          *  Durability: Volatile
-         *  Partition: AdvancedModularManikin
          */
     {
         UUID id;
@@ -97,7 +93,6 @@ module AMM
         /** QoS:
          *  Reliability: Reliable
          *  Durability: Transient Local
-         *  Partition: AdvancedModularManikin
          */
     {
         unsigned long long timestamp;
@@ -110,7 +105,6 @@ module AMM
         /** QoS:
          *  Reliability: Reliable
          *  Durability: Transient Local
-         *  Partition: AdvancedModularManikin
          */
     {
         string name;
@@ -128,7 +122,6 @@ module AMM
          *  Reliability: Reliable
          *  Durability: Transient Local (In case of module disconnect/reconnect)
          *  Liveliness: Automatic, 1 second lease
-         *  Partition: AdvancedModularManikin
          */
     {
         UUID id;
@@ -148,7 +141,6 @@ module AMM
         /** QoS:
          *  Reliability: Reliable
          *  Durability: Transient Local
-         *  Partition: AdvancedModularManikin
          */
     {
         string name;
@@ -165,7 +157,6 @@ module AMM
         /** QoS:
          *  Reliability: Reliable
          *  Durability: Transient Local
-         *  Partition: AdvancedModularManikin
          */
     {
         UUID id;
@@ -182,7 +173,6 @@ module AMM
          *  Ownership Strength: Set via Configuration if non-zero
          *  Presentation: Access Scope: Instance, Coherent Access: True, Order Access: False
          *  Liveliness: Automatic, 1 second lease
-         *  Partition: AdvancedModularManikin
          */
     {
         long long simulation_frame;
@@ -199,7 +189,6 @@ module AMM
          *  Ownership: Exclusive
          *  Ownership Strength: Set via Configuration if non-zero
          *  Liveliness: Automatic, 1 second lease (Lower if feasible, requires testing)
-         *  Partition: AdvancedModularManikin
          */
     {
         long long simulation_frame;
@@ -213,7 +202,6 @@ module AMM
         /** QoS:
          *  Reliability: Reliable
          *  Durability: Transient Local
-         *  Partition: AdvancedModularManikin
          */
     {
         UUID id;
@@ -233,7 +221,6 @@ module AMM
          *  Reliability: Reliable
          *  Durability: Transient Local
          *  Liveliness: Automatic, 1 second lease
-         *  Partition: AdvancedModularManikin
          */
     {
         unsigned long long timestamp;
@@ -250,7 +237,6 @@ module AMM
          *  Reliability: Reliable
          *  Durability: Transient Local
          *  Liveliness: Automatic, 1 second lease
-         *  Partition: AdvancedModularManikin
          */
     {
         @Key UUID module_id;
