@@ -111,7 +111,7 @@ module AMM
         @Key string manufacturer;
         @Key string model;
         @Key string serial_number;
-        UUID id;
+        UUID module_id;
         unsigned long long timestamp;
         octet ip_address[4];
         string capabilities_configuration;
