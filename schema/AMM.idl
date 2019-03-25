@@ -62,7 +62,7 @@ module AMM
     enum FAR_Status {
         REQUESTING
        ,ACCEPTED
-       ,DENIED
+       ,REJECTED
     };
     struct FragmentAmendmentRequest
         /** QoS:
@@ -212,8 +212,8 @@ module AMM
 
     enum ControlType {
         RUN
-       ,PAUSE
-       ,END
+       ,HALT
+       ,RESET
        ,SAVE
     };
     struct SimulationControl

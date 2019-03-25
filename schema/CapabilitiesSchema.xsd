@@ -173,8 +173,8 @@
   <xs:simpleType name="ControlType">
     <xs:restriction base="xs:string">
       <xs:enumeration value="RUN"/>
-      <xs:enumeration value="PAUSE"/>
-      <xs:enumeration value="END"/>
+      <xs:enumeration value="HALT"/>
+      <xs:enumeration value="RESET"/>
       <xs:enumeration value="SAVE"/>
     </xs:restriction>
   </xs:simpleType>
