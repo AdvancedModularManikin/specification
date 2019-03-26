@@ -108,10 +108,8 @@ module AMM
          */
     {
         string name;
-        @Key string manufacturer;
-        @Key string model;
-        @Key string serial_number;
-        UUID module_id;
+        @Key UUID module_id;
+        UUID educational_encounter;
         unsigned long long timestamp;
         octet ip_address[4];
         string capabilities_configuration;
@@ -145,9 +143,10 @@ module AMM
     {
         string name;
         string description;
-        @Key string manufacturer;
-        @Key string model;
-        @Key string serial_number;
+        string manufacturer;
+        string model;
+        string serial_number;
+        @Key UUID module_id;
         string module_version;
         AMM_Version amm_version;
         string capabilities_schema;
@@ -241,6 +240,7 @@ module AMM
     {
         @Key UUID module_id;
         string module_name;
+        UUID educational_encounter;
         @Key string capability;
         unsigned long long timestamp;
         StatusValue value;
