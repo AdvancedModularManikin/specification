@@ -46,8 +46,8 @@ module AMM
         UUID id;
         unsigned long long timestamp;
         FMA_Location location;
-        EventAgentType agent_type;
         UUID agent_id;
+        EventAgentType agent_type;
         string type;
         string data;
     };
@@ -62,8 +62,8 @@ module AMM
         UUID id;
         unsigned long long timestamp;
         FMA_Location location;
-        EventAgentType agent_type;
         UUID agent_id;
+        EventAgentType agent_type;
         string type;
         string data;
     };
@@ -85,8 +85,8 @@ module AMM
         // Values that can be amended
         unsigned long long timestamp;
         FMA_Location location;
-        EventAgentType agent_type;
         UUID agent_id;
+        EventAgentType agent_type;
         string type;
         string data;
     };
@@ -135,8 +135,8 @@ module AMM
         UUID id;
         unsigned long long timestamp;   // When the omission was detected.
         FMA_Location location;
-        EventAgentType agent_type;
         UUID agent_id;
+        EventAgentType agent_type;
         string type;
         string data;
     };
