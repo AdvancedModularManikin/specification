@@ -30,6 +30,13 @@ module AMM
         string comment;
     };
 
+    enum EventAgentType {
+        LEARNER
+       ,INSTRUCTOR
+       ,SCENARIO
+       ,PHYSIOLOGY
+    }
+
     struct EventFragment
         /** QoS:
          *  Reliability: Reliable
@@ -39,7 +46,8 @@ module AMM
         UUID id;
         unsigned long long timestamp;
         FMA_Location location;
-        string practitioner;
+        EventAgentType agent_type;
+        UUID agent_id;
         string type;
         string data;
     };
@@ -54,7 +62,8 @@ module AMM
         UUID id;
         unsigned long long timestamp;
         FMA_Location location;
-        string practitioner;
+        EventAgentType agent_type;
+        UUID agent_id;
         string type;
         string data;
     };
@@ -76,7 +85,8 @@ module AMM
         // Values that can be amended
         unsigned long long timestamp;
         FMA_Location location;
-        string practitioner;
+        EventAgentType agent_type;
+        UUID agent_id;
         string type;
         string data;
     };
@@ -125,12 +135,13 @@ module AMM
         UUID id;
         unsigned long long timestamp;   // When the omission was detected.
         FMA_Location location;
-        string practitioner;
+        EventAgentType agent_type;
+        UUID agent_id;
         string type;
         string data;
     };
 
-    struct AMM_Version {
+    struct Standard_Version {
         unsigned short major;
         unsigned short minor;
         unsigned short patch;
@@ -148,8 +159,8 @@ module AMM
         string serial_number;
         @Key UUID module_id;
         string module_version;
-        AMM_Version amm_version;
-        string capabilities_schema;
+        Standard_Version standard_version;
+        string capabilities_schema; // Defined by CapabilitiesSchema.xsd
     };
 
     struct PhysiologyModification
@@ -174,7 +185,7 @@ module AMM
          *  Liveliness: Automatic, 1 second lease
          */
     {
-        long long simulation_frame;
+        long long simulation_time;
         unsigned long long timestamp;
         @Key string name;   // BioGears node path
         string unit;
@@ -190,7 +201,7 @@ module AMM
          *  Liveliness: Automatic, 1 second lease (Lower if feasible, requires testing)
          */
     {
-        long long simulation_frame;
+        long long simulation_time;
         unsigned long long timestamp;
         @Key string name;   // BioGears node path
         string unit;
@@ -224,6 +235,7 @@ module AMM
     {
         unsigned long long timestamp;
         ControlType type;
+        UUID educational_encounter;
     };
 
     enum StatusValue {

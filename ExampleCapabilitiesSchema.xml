@@ -49,12 +49,14 @@
 
     <Configuration>
         <Capability type="Pulse" location="FMAID for left radial pulse">
+            <!-- Minimal example showing a simple 'enable' flag -->
             <xs:schema targetNamespace="urn:AdvancedModularManikin"
                        xmlns="urn:AdvancedModularManikin"
                        xmlns:xs="http://www.w3.org/2001/XMLSchema"
                        elementFormDefault="qualified">
                 <xs:element name="enable" type="xs:boolean">
                     <xs:annotation>
+                        <!-- Helpful comments that could be accessed by configuration builder tooling -->
                         <xs:appinfo>Usage:</xs:appinfo>
                         <xs:documentation xml:lang="en">
                             Enable left radial pulse functionality
@@ -76,6 +78,7 @@
                         </xs:documentation>
                     </xs:annotation>
                 </xs:element>
+                <!-- Internal 'state' variable for serialization, an integer from 0-7, inclusive -->
                 <xs:element name="state" default="0">
                     <xs:annotation>
                         <xs:appinfo>Note:</xs:appinfo>

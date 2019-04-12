@@ -32,6 +32,7 @@
   </xs:attributeGroup>
   <xs:complexType name="TopicsType">
     <xs:sequence>
+      <!-- This list should match the Topics defined in AMM.idl -->
       <xs:element type="AssessmentType" name="Assessment" maxOccurs="unbounded" minOccurs="0"/>
       <xs:element type="EventFragmentType" name="EventFragment" maxOccurs="unbounded" minOccurs="0"/>
       <xs:element type="EventRecordType" name="EventRecord" maxOccurs="unbounded" minOccurs="0"/>
