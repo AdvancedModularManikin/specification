@@ -3,6 +3,22 @@
            xmlns="urn:AdvancedModularManikin"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified">
+  <!-- Capability Glossary Schema -->
+  <xs:element name="CapabilityGlossaryDefinition" type="CapabilityGlossaryDefinitionType" />
+  <xs:complexType name="CapabilityGlossaryDefinitionType">
+    <xs:sequence>
+      <xs:element type="CapabilityDefinitionType" name="Capability" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CapabilityDefinitionType">
+    <xs:attributeGroup ref="CapabilityAttributes" />
+  </xs:complexType>
+  <xs:attributeGroup name="CapabilityAttributes">
+    <!-- Add additional attributes as their identified in AMM Capability Types Glossary -->
+    <xs:attribute type="xs:string" name="type" use="required"/>
+    <xs:attribute type="xs:string" name="location" use="optional"/>
+  </xs:attributeGroup>
+  <!-- Capabiilities Schema Schema -->
   <xs:element name="CapabilitiesSchema" type="CapabilitiesSchemaType"/>
   <xs:complexType name="CapabilitiesSchemaType">
     <xs:sequence>
@@ -25,11 +41,6 @@
     <xs:attributeGroup ref="CapabilityAttributes"/>
     <xs:anyAttribute/>
   </xs:complexType>
-  <xs:attributeGroup name="CapabilityAttributes">
-    <xs:attribute type="xs:string" name="type" use="required"/>
-    <xs:attribute type="xs:string" name="location" use="optional"/>
-    <!-- Add additional attributes as their identified in AMM Capability Types Glossary -->
-  </xs:attributeGroup>
   <xs:complexType name="TopicsType">
     <xs:sequence>
       <!-- This list should match the Topics defined in AMM.idl -->
