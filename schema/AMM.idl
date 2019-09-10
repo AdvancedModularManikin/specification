@@ -141,7 +141,7 @@ module AMM
         string data;
     };
 
-    struct Standard_Version {
+    struct Semantic_Version {
         unsigned short major;
         unsigned short minor;
         unsigned short patch;
@@ -159,7 +159,8 @@ module AMM
         string serial_number;
         @Key UUID module_id;
         string module_version;
-        Standard_Version standard_version;
+        Semantic_Version configuration_version;
+        Semantic_Version AMM_version;
         string capabilities_schema; // Defined by CapabilitiesSchema.xsd
     };
 
