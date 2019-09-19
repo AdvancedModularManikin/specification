@@ -95,7 +95,8 @@ The `HALT` control indicates that the simulation shall cease progressing in time
  freezing scenario state, including patient & environmental state.
 Modules shall maintain this state until further control is received.
 
-Modules shall also enter this state after receiving updated Configuration, or after receiving a `HALT` control.
+Modules shall also enter this state after receiving updated Configuration, via the `ModuleConfiguration` Topic. See
+ the [Configuration Data Model](configuration_data_model.md) for further details.
 
 #### `RESET`
 The `RESET` control indicates that simulation of a given scenario has completely ceased and all Modules shall reset

@@ -6,6 +6,7 @@ module AMM
         string description;
     };
 
+    /* Included in AMM namespace to avoid name conflicts in generated software bindings. */
     struct UUID
     {
         long long UUID_MSB;
@@ -121,7 +122,6 @@ module AMM
         @Key UUID module_id;
         UUID educational_encounter;
         unsigned long long timestamp;
-        octet ip_address[4];
         string capabilities_configuration;
     };
 
@@ -161,6 +161,7 @@ module AMM
         string module_version;
         Semantic_Version configuration_version;
         Semantic_Version AMM_version;
+        octet ip_address[4];
         string capabilities_schema; // Defined by CapabilitiesSchema.xsd
     };
 
