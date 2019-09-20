@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EventRecord type="Substance Infusion">
+    <!-- Tags to match BioGears Actions -->
+    <Substance>Substance Name</Substance>
+    <Concentration value="a value" unit="mass per volume unit"/>
+    <Rate value="rate of administration" unit="volume per time unit"/>
+</EventRecord>

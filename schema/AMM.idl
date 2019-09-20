@@ -3,7 +3,7 @@ module AMM
     struct FMA_Location
     {
         long FMAID;
-        string description;
+        string name;
     };
 
     /* Included in AMM namespace to avoid name conflicts in generated software bindings. */
@@ -47,8 +47,8 @@ module AMM
         UUID id;
         unsigned long long timestamp;
         FMA_Location location;
-        UUID agent_id;
         EventAgentType agent_type;
+        UUID agent_id;
         string type;
         string data;
     };
@@ -63,8 +63,8 @@ module AMM
         UUID id;
         unsigned long long timestamp;
         FMA_Location location;
-        UUID agent_id;
         EventAgentType agent_type;
+        UUID agent_id;
         string type;
         string data;
     };
@@ -86,8 +86,8 @@ module AMM
         // Values that can be amended
         unsigned long long timestamp;
         FMA_Location location;
-        UUID agent_id;
         EventAgentType agent_type;
+        UUID agent_id;
         string type;
         string data;
     };
@@ -135,8 +135,8 @@ module AMM
         UUID id;
         unsigned long long timestamp;   // When the omission was detected.
         FMA_Location location;
-        UUID agent_id;
         EventAgentType agent_type;
+        UUID agent_id;
         string type;
         string data;
     };
