@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PhysiologyModification type="Substance Compound Infusion">
+    <!-- Tags to match BioGears Actions -->
+    <SubstanceCompound>Compound Name</SubstanceCompound>
+    <BagVolume value="size of bag" unit="volume unit"/>
+    <Rate value="rate of administration" unit="volume per time unit"/>
+</PhysiologyModification>

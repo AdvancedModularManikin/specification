@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenderModification type="Hypoxia">
+    <!-- Normally Location is redundant because it’s included in the
+      Event Record metadata, but this Location may be different. -->
+    <Location value="FMAID number for affected region of body"/>
+    <Severity value="0 to 1"/>
+</RenderModification>

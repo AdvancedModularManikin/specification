@@ -34,7 +34,7 @@ Real-world timestamp of when Topic value was updated, in milliseconds since UTC 
 
 #### `name`
 Name of the data element, taken from the [BioGears CDM](https://biogearsengine.com/documentation/_c_d_m_tables.html).
-[@draum TODO: Add more detail about how the 'nodepath' names are generated.]
+[TODO: Add more detail about how the 'nodepath' names are generated.]
 
 This field is used as a DDS Topic Key.
 
@@ -123,8 +123,8 @@ A word or concise phrase describing the precise category of the Event. The `type
 
 #### `data`
 An XML document containing the data describing the event details.
-`data` entries shall conform to the appropriate entry in the [Event Types Glossary](glossaries/Event_Type) maintained in
- this repository.
+`data` entries shall conform to the appropriate entry in the [Event Types Glossary](glossaries/Event_Type) maintained
+ in this repository.
 See below for further details.
 This field shall have XML version & encoding of `<?xml version="1.0" encoding="UTF-8"?>`.
 
@@ -170,4 +170,88 @@ Some `Action` tags have additional attributes, and may necessitate additional ch
  e.g. [Substance Bolus](glossaries/Event_Type/substance-bolus.xml).
 
 ## Physiology Modifications
+Whereas Events are the record of 'what happened' during a Scenario, messages published to the `PhysiologyModification`
+ Topic contain the details of how the patient's physiology should change in response to a particular Event.
+Common examples include drug administration, ventilation, and causing or stopping a hemorrhage.
+Because development of an engine-agnostic data model is outside the scope of AMM version 1,
+ the BioGears Actions are used directly for this data category.
+ 
+All `PhysiologyModification` messages are tied to a specific Event Record via the `event_id` field,
+ and shall only be published when triggered by an `EventRecord` message.
+
+When an `EventRecord` has a `location` value on the body of the patient
+ and there is a Module simulating that part of the body,
+ that Module is the only Module allowed to publish `PhysiologyModification`s in response to that `EventRecord`.
+This restriction is required because there may be local state in the Module that is unknown to the rest of the manikin
+ that may impact the physiological reaction to a given Event.
+
+For example, a 'smart syringe' Module can use the Event Fragment Protocol to discover it has been used to perform an
+ injected into an arm and then publish the appropriate drug administration Event, but the Module simulating the arm
+ must publish the `PhysiologyModification` message, because there could be sufficient swelling in the arm to limit
+ the effectiveness of the injection.
+ 
+### `PhysiologyModification` Topic Fields
+#### `id`
+UUID of the message.
+
+#### `event_id`
+The `id` field from the `EventRecord` that triggered the `PhysiologyModification` message.
+
+#### `type` & `data`
+Much like `EventRecords` the `type` field is a concise name of the `PhysiologyModification` message, and the `data`
+ field is the actual payload describing the changes to be made. These details are tracked in the
+ [Physiology Modification Glossary](glossaries/Physiology_Modification).
+
+The `type` and `data` fields of `PhysiologyModification` messages will frequently be nearly identical to those in the
+ `EventRecord` that triggered the `PhysiologyModification` message.
+However, as mentioned above, there may still be local state in a Module which alters the `data` values between the
+ `EventRecord` and the `PhysiologyModification` messages.
+Additionally, there can be cases where a particular `type` of `PhysiologyModification` is triggered by a different
+ `type` of `EventRecord`.
+ 
+The `data` field shall be an XML document with a version & encoding of `<?xml version="1.0" encoding="UTF-8"?>`.
+The `data` field shall have a single root element, `PhysiologyModification`,  which has a single attribute, `type`.
+
+The `type` attribute of the `PhysiologyModification` XML tag shall be identical to the `type` field of the
+ `PhysiologyModification` Topic message.
+ 
+## Render Modifications
+The `RenderModification` Topic encompasses changes to any of the information being actively rendered by Modules
+ during a simulation.
+This includes physical findings, placements of medical devices, internal injuries,
+ and even the presence or absence of data on a patient monitor due to sensor placement.
+Render Modifications do not modify the state of the simulated patient, merely how that state is displayed to the
+ practitioners.
+ 
+Not all changes to how the state of the simulated patient is rendered require Render Modifications.
+If the information being rendered is derived from physiological values, the rendered state can simply change along
+ with changing patient physiology.
+For example, if a Module has a 'smart skin' that alters the color of its tissue based on the patient's core body
+ temperature, this coloration can change in accordance with changing body temp without the need for Render
+ Modification messages.
+
+Much like Physiology Modifications, Render Modifications occur only as a response to an Event,
+ and are similarly tied to that event.
+ 
+### `RenderModification` Topic Fields
+#### `id`
+UUID of the message.
+
+#### `event_id`
+The `id` field from the `EventRecord` that triggered the `RenderModification` message.
+
+#### `type` & `data`
+As with the `EventRecord` Topic, the `type` and `data` fields of the `RenderModification` are linked and defined in
+ the [Render Modification Glossary](glossaries/Render_Modification).
+ 
+The `type` field is a concise name that will be readily understood by medical practitioners.
+
+The `data` field is an XML document describing the details of what is to be rendered,
+ and shall have a version & encoding of `<?xml version="1.0" encoding="UTF-8"?>`.
+The `data` field shall have a single root element, `RenderModification`, which has a single attribute, `type`.
+
+The `type` attribute of the `RenderModification` XML tag shall be identical to the `type` field of the
+ `RenderModification` Topic message.
+
+## Learner Performance Assessments
 
