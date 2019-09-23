@@ -91,8 +91,8 @@ The allowed values for `location` those described by the
 The data type for the `location` field consists of the numeric FMAID and canonical name, as described by FMA.
 
 #### `agent_type`
-The category of entity that caused the event.
-The value shall be one of the following: `LEARNER`, `INSTRUCTOR`, `SCENARIO`, `PHYSIOLOGY`
+The category of entity that caused the Event.
+The value shall be one of the following: `LEARNER`, `INSTRUCTOR`, `SCENARIO`, or `PHYSIOLOGY`.
 
 The `LEARNER` and `INSTRUCTOR` types indicate the event was caused by a user action.
 If an Instructor is triggering an event on behalf of the Learner (e.g. administering a drug via a tablet interface),
@@ -103,12 +103,12 @@ The `PHYSIOLOGY` type indicates the event was triggered by the patient physiolog
  and entering into a specific state, as determined by the physiology Module.
 
 #### `agent_id`
-UUID for the entity that caused the event.
+UUID for the entity that caused the Event.
 
 For the `LEARNER` and `INSTRUCTOR` agent types, the `agent_id` value shall uniquely correspond to the individual who
- triggered the event.
+ triggered the Event.
 For the `SCENARIO` agent type, the `agent_id` value shall be the `module_id` value of the Module evaluating the
- Scenario script and triggering the Event.
+ Scenario and triggering the Event.
 For the `PHYSIOLOGY` agent type, the `agent_id` value shall be the `module_id` value of the physiology Module
  triggering the Event.
  
@@ -116,6 +116,11 @@ In the common case where a Module cannot uniquely identify the individual who tr
  follow the Event Fragment Protocol, described below, with an initial value of `null` for the `agent_id`.
 Modules should always be able to differentiate `agent_type`, based on the presumed user role in the educational
  encounter.
+
+If there is no mechanism for identifying which individual has performed an action,
+ the AMM core software shall be able to respond to Event Fragments to supply a special `agent_type` of `UNKNOWN`.
+This functionality shall be controllable by configuration of the core Modules.
+[TODO: Implementation details of `UNKNOWN` UUID]
  
 #### `type`
 A word or concise phrase describing the precise category of the Event. The `type` field is provided as a convenient
@@ -254,4 +259,158 @@ The `type` attribute of the `RenderModification` XML tag shall be identical to t
  `RenderModification` Topic message.
 
 ## Learner Performance Assessments
+Messages on the `Assessment` Topic are published by Modules in order to evaluate learner performance of specific
+ activities.
+While Assessment messages don't impact the behavior of the manikin in any way, 
+ they are a crucial component of Module behavior.
+As with Physiology and Render Modifications, they are tied to a specific Event that generated the performance
+ Assessment.
+
+### `Assessment` Topic Fields
+#### `id`
+UUID of the message.
+
+#### `event_id`
+`event_id` shall have the same value as the `id` field from the `EventRecord` that triggered the `Assessment` message.
+The `Assessment` message is recording how well the learner performed the action that triggered the associated Event.
+
+#### `value`
+The `value` of an `Assessment` shall take on one of four values:
+ `SUCCESS`, `EXECUTION_ERROR`, `COMMISSION_ERROR`, or `OMISSION_ERROR`.
+
+`SUCCESS` shall indicate the learner performed the task adequately.
+
+`EXECUTION_ERROR` shall indicate the learner performed the task inadequately.
+
+`COMMISSION_ERROR` shall indicate the learner performed a task that was inappropriate at the time of performance.
+Usually this indicates the learner performed an action that was not part of the appropriate procedure,
+ or performed a step of the procedure out-of-order.
+
+`OMISSION_ERROR` shall indicate the learner failed to take an action that was required.
+Because this is an assessment of an Event that didn't happen, the `event_id` for `Assessments` with a `value` of
+ `OMISSION_ERROR` shall match the `id` field of an `OmittedEvent` message, discussed below.
+
+#### `comment`
+A phrase or sentence describing the nature of the error.
+
+## Omitted Events
+Sometimes, in the course of a procedure, actions that were supposed to have been taken are missed.
+For proper Assessment, these omissions must be captured.
+Because performance Assessment records are tied to a specific Event Record,
+ and because Omitted Events are things that did not happen and, therefore, should not cause changes in physiology,
+ `OmittedEvent`s are published on a distinct Topic from `EventRecord`s.
+
+### `OmittedEvent` Topic Fields
+`OmittedEvent`s share the same fields with `EventRecord`s, but some of the semantic meanings have changed.
+
+#### `id`
+UUID of the Omitted Event. This is referenced only by `Assessment` messages with a value of `OMISSION_ERROR`.
+
+#### `timestamp`
+Real-world timestamp of when the omission was detected, in milliseconds since UTC Unix epoch.
+This is not the time that the Omitted Event should have been performed,
+ but the time when the omission was confirmed to be erroneous.
+ 
+#### `location`
+Where the event should have occurred. Location shall be an entry in the 
+ [Foundational Model of Anatomy](http://sig.biostr.washington.edu/projects/fm/AboutFM.html) (FMA).
+If location cannot be adequately determined by the Module detecting the Omission,
+ this value may have an appropriate 'null' value. [TODO: Clarify "appropriate 'null'" for `FMA_Location` type]
+
+#### `agent_type`
+The category of entity that should have performed the Event.
+The value shall be one of the following: `LEARNER`, `INSTRUCTOR`, `SCENARIO`, or `PHYSIOLOGY`.
+The value will probably be `LEARNER`.
+
+#### `agent_id`
+UUID for the entity that should have caused the Event.
+
+For the `LEARNER` and `INSTRUCTOR` agent types, the `agent_id` value shall uniquely correspond to the individual who
+ should have triggered the Event.
+For the `SCENARIO` agent type, the `agent_id` value shall be the `module_id` value of the Module evaluating the
+ Scenario and should have triggered the Event.
+For the `PHYSIOLOGY` agent type, the `agent_id` value shall be the `module_id` value of the physiology Module that
+ should have triggered the Event.
+
+As with `EventRecord`s, Modules that are unable to determine who should have performed the action shall use the Event
+ Fragment Protocol with an initial `agent_id` value of `null`.
+
+#### `type`
+The category of Event that should have occurred.
+The value of this field shall be an entry in the [Event Types Glossary](glossaries/Event_Type).
+
+#### `data`
+If the information for this field can be determined by the Module that detects the Omission,
+ the Module shall provide the appropriate values, matching the `type`.
+If the Module is not able to determine the appropriate values, this field shall be an empty string.
+
+## Event Fragment Protocol
+In some cases, a Module may not have all of the information required to publish an Event Record.
+For example, a 'smart syringe' should publish an Injection Event,
+ but has no way of knowing where the injection was performed.
+ 
+To account for these cases, Modules may follow a multi-step process called the Event Fragment Protocol:
+1. The initiating Module, which has insufficient information, publishes an `EventFragment` message.
+1. Another Module may 'respond' to the `EventFragment` with a `FragmentAmendmentRequest` (FAR)
+    containing the missing information.
+1. The initiating Module updates the `status` on the `FragmentAmendmentRequest` to `accept` or `reject` the FAR.
+1. The initiating Module publishes the full `EventRecord` with either data provided by a `FAR`, 
+    or with an appropriate 'null' value.
+
+An illustrated example of the Event Fragment Protocol is maintained
+[here](https://raw.githubusercontent.com/AdvancedModularManikin/specification/master/diagrams/AMM%20Event%20Fragment%20Data%20Flow%20-%20Syringe%20Example.jpg).
+
+### `EventFragment` Topic Fields
+`EventFragment`s contain the same data fields as `EventRecord`s, 
+ but are published on a separate Topic from `EventRecord`s because certain fields may be published with a `null` value.
+
+#### `id`
+UUID of the Fragment message. This `id` is unrelated to the `id` of the future `EventRecord` that will derive from
+ this Fragment.
+
+#### `timestamp`
+Real-world timestamp of when the `EventFragment` was recorded, in milliseconds since UTC Unix epoch.
+This value should rarely change as part of the Event Fragment Protocol.
+
+#### `location`
+The [FMA](http://sig.biostr.washington.edu/projects/fm/AboutFM.html) location for the `EventFragment`.
+This value may have an appropriate 'null' value, indicating the initiating Module is seeking missing location
+ information. [TODO: Clarify "appropriate 'null'" for `FMA_Location` type]
+
+#### `agent_type`
+The category of entity that caused the Event.
+The value shall be one of the following: `LEARNER`, `INSTRUCTOR`, `SCENARIO`, or `PHYSIOLOGY`.
+
+Meaning of these values is identical to that of `EventRecord` `agent_type` values.
+Modules should infer this value based on the Event `type`. 
+
+#### `agent_id`
+UUID for the entity that caused the Event.
+May be `null` if the initiating Module cannot uniquely determine who caused the Event.
+This is likely to be the most commonly missing piece of information sought by the Event Fragment Protocol.
+
+#### `type` & `data`
+These fields are identical to those of `EventRecord`.
+Initiating Modules shall not provide 'null' values for either of these fields as part of the Event Fragment Protocol.
+
+Responding Modules will likely filter `EventFragment` messages based on `type`.
+
+### `FragmentAmendmentRequest` Type Fields
+
+
+
+
+Other Modules may then subscribe to these Event Fragments and publish a Fragment Amendment Request (FAR)
+ when they have data that is applicable to a particular Event Fragment.
+These `FragmentAmendmentRequest`s are published on their own Topic,
+ so Modules can subscribe & unsubscribe as necessary.
+ 
+Each `FragmentAmendmentRequest` (FAR) includes a `status` field.
+Modules that ‘make’ a FAR publish a FAR with a `status` of Requesting.
+The module that published the Event Fragment
+ will then respond to the Fragment Amendment Requests by publishing a new version of the Request with the Status field updated to either Accepted or Rejected.
+
+Once a module has ‘accepted’ a Fragment Amendment Request (by publishing an updated version of the Request with the Accepted status) for the missing data element(s) of the initial Event Fragment, the module will then publish a complete Event Record. Finally, the module will publish updates to any outstanding Fragment Amendment Request with a Status of Rejected.
+
+In the case of multiple missing data fields in an Event Fragment, the initiating module may post additional Fragments with incremental updates based on Accepted FAR data.
 
