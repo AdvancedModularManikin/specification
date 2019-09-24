@@ -44,8 +44,9 @@ module AMM
          *  Durability: Volatile
          */
     {
-        UUID id;
+        @key UUID id;
         unsigned long long timestamp;
+        UUID educational_encounter;
         FMA_Location location;
         EventAgentType agent_type;
         UUID agent_id;
@@ -62,6 +63,7 @@ module AMM
     {
         UUID id;
         unsigned long long timestamp;
+        @key UUID educational_encounter;
         FMA_Location location;
         EventAgentType agent_type;
         UUID agent_id;
@@ -80,16 +82,13 @@ module AMM
          *  Durability: Volatile
          */
     {
-        UUID id;
+        @key UUID id;
         UUID fragment_id;
         FAR_Status status;
         // Values that can be amended
-        unsigned long long timestamp;
         FMA_Location location;
         EventAgentType agent_type;
         UUID agent_id;
-        string type;
-        string data;
     };
 
     enum LogLevel {
@@ -134,6 +133,7 @@ module AMM
     {
         UUID id;
         unsigned long long timestamp;   // When the omission was detected.
+        @key UUID educational_encounter;
         FMA_Location location;
         EventAgentType agent_type;
         UUID agent_id;
@@ -187,6 +187,7 @@ module AMM
          *  Liveliness: Automatic, 1 second lease
          */
     {
+        UUID educational_encounter;
         long long simulation_time;
         unsigned long long timestamp;
         @Key string name;   // BioGears node path
@@ -203,6 +204,7 @@ module AMM
          *  Liveliness: Automatic, 1 second lease (Lower if feasible, requires testing)
          */
     {
+        UUID educational_encounter;
         long long simulation_time;
         unsigned long long timestamp;
         @Key string name;   // BioGears node path
@@ -237,7 +239,7 @@ module AMM
     {
         unsigned long long timestamp;
         ControlType type;
-        UUID educational_encounter;
+        @key UUID educational_encounter;
     };
 
     enum StatusValue {

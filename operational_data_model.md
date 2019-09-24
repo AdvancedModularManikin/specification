@@ -23,6 +23,10 @@ Both Physiology Values and Waveforms have the same format; their only difference
  Service (QoS) settings for DDS-RTPS.
 
 ### `PhysiologyValue` & `PhysiologyWaveform` Topic Fields
+#### `educational_encounter`
+Generated and assigned by the Module Manager (or equivalent) when a Scenario is loaded.
+This value is used to uniquely identify the instance of a Scenario being run.
+
 #### `simulation_time`
 Value of the simulated clock, in milliseconds since UTC Unix epoch.
 Because this is tightly coupled to the simulated physiology,
@@ -83,6 +87,12 @@ UUID of the Event. This is used as a reference by other AMM Topics to link them 
 
 #### `timestamp`
 Real-world timestamp of when the Event was recorded, in milliseconds since UTC Unix epoch.
+
+#### `educational_encounter`
+Generated and assigned by the Module Manager (or equivalent) when a Scenario is loaded.
+This value is used to uniquely identify the instance of a Scenario being run.
+
+This field is used as a DDS Topic Key.
 
 #### `location`
 Where the event occurred. For AMM version 1, this value is restricted to the body of the patient.
@@ -174,7 +184,7 @@ Specifically, the children of the `EventRecord` tag should match the children ta
 Some `Action` tags have additional attributes, and may necessitate additional child tags,
  e.g. [Substance Bolus](glossaries/Event_Type/substance-bolus.xml).
 
-## Physiology Modifications
+### Physiology Modifications
 Whereas Events are the record of 'what happened' during a Scenario, messages published to the `PhysiologyModification`
  Topic contain the details of how the patient's physiology should change in response to a particular Event.
 Common examples include drug administration, ventilation, and causing or stopping a hemorrhage.
@@ -220,7 +230,7 @@ The `data` field shall have a single root element, `PhysiologyModification`,  wh
 The `type` attribute of the `PhysiologyModification` XML tag shall be identical to the `type` field of the
  `PhysiologyModification` Topic message.
  
-## Render Modifications
+### Render Modifications
 The `RenderModification` Topic encompasses changes to any of the information being actively rendered by Modules
  during a simulation.
 This includes physical findings, placements of medical devices, internal injuries,
@@ -258,7 +268,7 @@ The `data` field shall have a single root element, `RenderModification`, which h
 The `type` attribute of the `RenderModification` XML tag shall be identical to the `type` field of the
  `RenderModification` Topic message.
 
-## Learner Performance Assessments
+### Learner Performance Assessments
 Messages on the `Assessment` Topic are published by Modules in order to evaluate learner performance of specific
  activities.
 While Assessment messages don't impact the behavior of the manikin in any way, 
@@ -293,7 +303,7 @@ Because this is an assessment of an Event that didn't happen, the `event_id` for
 #### `comment`
 A phrase or sentence describing the nature of the error.
 
-## Omitted Events
+### Omitted Events
 Sometimes, in the course of a procedure, actions that were supposed to have been taken are missed.
 For proper Assessment, these omissions must be captured.
 Because performance Assessment records are tied to a specific Event Record,
@@ -310,6 +320,12 @@ UUID of the Omitted Event. This is referenced only by `Assessment` messages with
 Real-world timestamp of when the omission was detected, in milliseconds since UTC Unix epoch.
 This is not the time that the Omitted Event should have been performed,
  but the time when the omission was confirmed to be erroneous.
+ 
+#### `educational_encounter`
+Generated and assigned by the Module Manager (or equivalent) when a Scenario is loaded.
+This value is used to uniquely identify the instance of a Scenario being run.
+
+This field is used as a DDS Topic Key.
  
 #### `location`
 Where the event should have occurred. Location shall be an entry in the 
@@ -344,7 +360,7 @@ If the information for this field can be determined by the Module that detects t
  the Module shall provide the appropriate values, matching the `type`.
 If the Module is not able to determine the appropriate values, this field shall be an empty string.
 
-## Event Fragment Protocol
+### Event Fragment Protocol
 In some cases, a Module may not have all of the information required to publish an Event Record.
 For example, a 'smart syringe' should publish an Injection Event,
  but has no way of knowing where the injection was performed.
@@ -363,15 +379,23 @@ An illustrated example of the Event Fragment Protocol is maintained
 ### `EventFragment` Topic Fields
 `EventFragment`s contain the same data fields as `EventRecord`s, 
  but are published on a separate Topic from `EventRecord`s because certain fields may be published with a `null` value.
+The Module that first publishes an `EventFragment` shall be the only Module to post 'update' messages with the same
+ `id` value.
 
 #### `id`
-UUID of the Fragment message. This `id` is unrelated to the `id` of the future `EventRecord` that will derive from
+UUID of the Fragment message.
+This `id` is unrelated to the `id` of the future `EventRecord` that will derive from
  this Fragment.
+This field is used as a DDS Topic Key.
 
 #### `timestamp`
 Real-world timestamp of when the `EventFragment` was recorded, in milliseconds since UTC Unix epoch.
-This value should rarely change as part of the Event Fragment Protocol.
+This value shall not change as part of the Event Fragment Protocol.
 
+#### `educational_encounter`
+Generated and assigned by the Module Manager (or equivalent) when a Scenario is loaded.
+This value is used to uniquely identify the instance of a Scenario being run.
+ 
 #### `location`
 The [FMA](http://sig.biostr.washington.edu/projects/fm/AboutFM.html) location for the `EventFragment`.
 This value may have an appropriate 'null' value, indicating the initiating Module is seeking missing location
@@ -395,22 +419,194 @@ Initiating Modules shall not provide 'null' values for either of these fields as
 
 Responding Modules will likely filter `EventFragment` messages based on `type`.
 
-### `FragmentAmendmentRequest` Type Fields
-
-
-
-
-Other Modules may then subscribe to these Event Fragments and publish a Fragment Amendment Request (FAR)
- when they have data that is applicable to a particular Event Fragment.
-These `FragmentAmendmentRequest`s are published on their own Topic,
- so Modules can subscribe & unsubscribe as necessary.
+### `FragmentAmendmentRequest` Usage
+Once a Module publishes an `EventFragment` indicating it is seeking information that it is missing,
+ other Modules that are subscribed to the `EventFragment` Topic may publish a `FragmentAmendmentRequest` (FAR)
+ when they have data that is applicable to a particular `EventFragment`.
+Because `FragmentAmendmentRequest`s are published on their own Topic,
+ Modules can subscribe to & unsubscribe from FARs as necessary.
  
 Each `FragmentAmendmentRequest` (FAR) includes a `status` field.
-Modules that ‘make’ a FAR publish a FAR with a `status` of Requesting.
-The module that published the Event Fragment
- will then respond to the Fragment Amendment Requests by publishing a new version of the Request with the Status field updated to either Accepted or Rejected.
+Modules that ‘respond' to an Event Fragment with a FAR publish a FAR with a `status` of `REQUESTING`.
+The module that published the Event Fragment will then respond to the FAR by publishing a new version of the FAR
+ with the `status` field updated to either `ACCEPTED` or `REJECTED`.
+ 
+Once the initiating Module has ‘accepted’ a FAR by publishing an updated version of the FAR with the `ACCEPTED` status,
+ the initiating Module will then publish a complete `EventRecord`.
+Finally, it will publish updates to any outstanding `FragmentAmendmentRequest` with a `status` of `REJECTED`.
 
-Once a module has ‘accepted’ a Fragment Amendment Request (by publishing an updated version of the Request with the Accepted status) for the missing data element(s) of the initial Event Fragment, the module will then publish a complete Event Record. Finally, the module will publish updates to any outstanding Fragment Amendment Request with a Status of Rejected.
+In the case of multiple missing data fields in an Event Fragment,
+ the initiating Module may post incremental updates to the `EventFragment`, keeping the same `id`,
+ based on Accepted FAR data.
 
-In the case of multiple missing data fields in an Event Fragment, the initiating module may post additional Fragments with incremental updates based on Accepted FAR data.
+### `FragmentAmendmentRequest` Type Fields
+#### `id`
+UUID of the FAR. 
+This field is used as a DDS Topic Key.
+Modules publishing a `FragmentAmendmentRequest` shall also subscribe to this Topic and listen for update messages
+ with a matching `id`.
 
+#### `fragment_id`
+The value of the `fragment_id` field shall match the value of the `id` field of the `EventFragment` that this message
+ is requesting to amend.
+
+#### `status`
+The status of the amendment request.
+This field shall have one of three values: `REQUESTING`, `ACCEPTED`, or `REJECTED`.
+The initial value shall be `REQUESTING`.
+The value shall be updated to `ACCEPTED` or `REJECTED` by the Module that published the `EventFragment` that this
+ message is requesting to amend.
+
+#### `location`, `agent_type`, & `agent_id`
+These fields may contain the missing information being supplied to the `EventFragment`.
+These fields shall have the same type as their respective `EventRecord` fields,
+ or may have an appropriate 'null' value. [TODO: Determine "appropriate 'null' value" for FMA_location]
+ 
+## Simulator Data
+This third category of data encapsulates the state of the Module hardware and software.
+This includes Control of when the simulation is running,
+ the Statuses published by every Capability of every Module, and all Logging.
+
+### Simulation Control
+These messages are used to control the state of the simulation.
+All modules must subscribe to this Topic and behave appropriately in order for the simulation to function correctly.
+Control of the simulation has been distilled down to four explicit commands: `RUN`, `HALT`, `RESET`, and `SAVE`.
+Further 'load scenario' control functionality is implicitly provided by publishing to the `ModuleConfiguration` Topic,
+ as described further in the [Configuration Data Model](configuration_data_model.md) document.
+While the names of the Simulation Controls are designed to be as clear as possible,
+ further detailed descriptions of required Module behavior are provided in the
+ [Module Behavior Requirements](module_behavior_requirements.md) document.
+
+### `SimulationControl` Topic Fields
+#### `timestamp`
+Real-world timestamp of when the `SimulationControl` was issued, in milliseconds since UTC Unix epoch.
+
+#### `type`
+One of: `RUN`, `HALT`, `RESET`, or `SAVE`.
+
+#### `educational_encounter`
+Generated and assigned by the Module Manager (or equivalent) when a Scenario is loaded.
+This value is used to uniquely identify the instance of a Scenario being run.
+
+This field is used as a DDS Topic Key.
+
+### Capability Status
+Modules report their ability to participate in a simulation by updating the Status for each of the
+ Capabilities provided by the Module (as selected by the Scenario).
+Module readiness is broken-up this way because some Module functionality may require resources that
+ other functionality does not.
+The Scenario may specify that only certain functionality is required for a simulation.
+
+Modules shall report a status `value` that takes one of three values: `OPERATIONAL`, `INOPERATIVE`, or `EXIGENT`.
+The `OPERATIONAL` status indicates that the Module is able to run, or is currently running, the current Scenario.
+The `INOPERATIVE` status indicates that the Module is currently unable to participate in a simulation.
+This may be because a Scenario hasn't been loaded, hardware has failed,
+ or a fluid reservoir is empty, for example.
+The `EXIGENT` status indicates that a Module is currently able to participate in the simulation,
+ but will not not be able to continue participating in the simulation without human intervention.
+ 
+The `EXIGENT` status should be used primarily to raise alerts to the AMM operator that action is required in
+ order to continue the simulation.
+The most obvious use-case is to alert users when resources (primarily battery power or fluids)
+ are in danger of being exhausted and causing unexpected termination of the simulation.
+ 
+### `Status` Topic Fields
+#### `module_id`
+Generated by the Module and shall be unique per module instance.
+Used to uniquely identify Module in AMM system.
+
+This field is used as a DDS Topic Key.
+
+#### `module_name`
+A human friendly short identifier for the Module. Used for user interface displays.
+
+#### `educational_encounter`
+Generated and assigned by the Module Manager (or equivalent) when a Scenario is loaded.
+This value is used to uniquely identify the instance of a Scenario being run.
+
+#### `capability`
+The specific Capability of the Module for which Status is being reported.
+
+This field is an XML document with a single root element of `Capability`.
+The `type` and other attributes of the `Capability` element shall conform to an entry in the
+ [Capabilities Glossary](glossaries/Capability).
+
+This field shall have XML version & encoding of `<?xml version="1.0" encoding="UTF-8"?>`.
+
+This field is used as a DDS Topic Key.
+
+#### `timestamp`
+Real-world timestamp of when Status value was last updated, in milliseconds since UTC Unix epoch.
+
+#### `value`
+One of `OPERATIONAL`, `INOPERATIVE`, or `EXIGENT`.
+
+#### `message`
+A brief phrase or sentence to provide further insight or context into a status value, if applicable.
+This field is intended to be used primarily by user interface displays.
+
+### Logging
+Modules may publish logging messages during operation which may be collected and presented to end users,
+ or saved for later review.
+Log messages should not be used to generate alerts or notifications for the main manikin UI.
+Capability Status(es) are the correct source for these UI alerts,
+ which should be generated by the Core Software (Module Manager in the reference implementation).
+However, additional interface (e.g. technician’s view) may wish to leverage logging data directly.
+
+For consistency, AMM defines six log levels, with specific meanings and behavior expectations attached.
+They are listed here from 'most' to 'least' severe:
+
+#### `FATAL`
+This indicates the Module must cease normal operations and will shut down, or enter a non-recoverable error state.
+Modules publishing `FATAL` log messages shall also publish Capability Status updates of `INOPERATIVE` as appropriate.
+
+#### `ERROR`
+Error messages the Module cannot operate as expected, but may be able to recover.
+If the cause of the Error messages also causes a change in Module functionality,
+ the Module shall update its Capability Statuses appropriately, usually to `INOPERATIVE`.
+ 
+`ERROR` message publication frequency shall be limited to approximately 1 Hz.
+ 
+#### `WARN`
+Warnings usually caused by a Module receiving unexpected data or entering an undesired state,
+ but still able to function.
+If the warning requires time-critical action to avoid a loss of functionality,
+ the Module shall also update the appropriate Capability Status value(s) to `EXIGENT`.
+
+`INFO` message publication frequency shall be limited to approximately 1 Hz.
+
+#### `INFO`
+These are informational messages that do not indicate any problems, but provide additional insight into Module
+ functionality.
+These are usually messages about changes in connectivity, Module operation, sensing user actions, etc.
+
+`INFO` message publication frequency shall be limited to approximately 1 Hz.
+
+#### `DEBUG`
+These messages shall be disabled during 'normal' Module operation.
+Commercial/Production Modules shall not publish `DEBUG` messages unless specifically enabled via configuration value.
+
+`DEBUG` messages, if specifically enabled via configuration, may be published more frequently than 1 Hz,
+ but Module developers should take care not to flood the network.
+A limit of approximately 10 Hz is generally recommended.
+
+#### `TRACE`
+Trace messages are included in the AMM standard only for Module developer convenience.
+Commercial/Production Modules shall never publish `TRACE` level messages.
+
+### `Log` Topic Fields
+#### `timestamp`
+Real-world timestamp of the `Log` message, in milliseconds since UTC Unix epoch.
+
+#### `module_id`
+Generated by the Module and shall be unique per module instance.
+Used to uniquely identify Module in AMM system.
+
+This field is used as a DDS Topic Key.
+
+#### `level`
+One of `FATAL`, `ERROR`, `WARN`, `INFO`, `DEBUG`, or `TRACE`.
+See above for usage details.
+
+#### `message`
+The content of the Log message, usually a short phrase or sentence.
