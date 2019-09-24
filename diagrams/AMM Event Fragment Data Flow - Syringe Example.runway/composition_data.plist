@@ -49,7 +49,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{180, 110}, {0, 830}}</string>
+					<string>{{230, 130}, {0, 980}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -168,7 +168,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{150, 60}, {60, 50}}</string>
+					<string>{{200, 80}, {60, 50}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -284,7 +284,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{290, 60}, {950, 880}}</string>
+					<string>{{330, 80}, {1070, 1030}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -401,7 +401,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{310, 110}, {290, 810}}</string>
+					<string>{{350, 130}, {350, 960}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -518,7 +518,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{620, 110}, {290, 810}}</string>
+					<string>{{720, 130}, {290, 960}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -635,7 +635,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{930, 110}, {290, 810}}</string>
+					<string>{{1030, 130}, {350, 960}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -753,7 +753,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{80, 120}, {53, 42}}</string>
+					<string>{{130, 140}, {53, 42}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -861,7 +861,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{180, 280}, {440, 0}}</string>
+					<string>{{230, 300}, {490, 0}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -879,7 +879,7 @@
 					<key>rotationAngle</key>
 					<integer>0</integer>
 					<key>rotationHandleRadius</key>
-					<real>250</real>
+					<real>265</real>
 					<key>scaleImage</key>
 					<true/>
 					<key>stroke1Color</key>
@@ -971,7 +971,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{180, 140}, {1, 1}}</string>
+					<string>{{230, 160}, {1, 1}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -1081,7 +1081,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{180, 140}, {-40, 0}}</string>
+					<string>{{230, 160}, {-40, 0}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -1191,7 +1191,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{1350, 110}, {0, 830}}</string>
+					<string>{{1510, 130}, {0, 980}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -1309,7 +1309,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{1335, 65}, {31, 40}}</string>
+					<string>{{1495, 85}, {31, 40}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -1402,7 +1402,7 @@
 					bmcwCkRldGVjdCBuZWVkbGUgaW5zZXJ0aW9u
 					IFwKPT4gTGlzdGVuIGZvciBFdmVudCBcCkZy
 					YWdtZW50IG9mIGFwcHJvcHJpYXRlIFwKdHlw
-					ZXM6IEluamVjdGlvbiwgSW5mdXNpb259
+					ZTogU3Vic3RhbmNlIEJvbHVzfQ==
 					</data>
 					<key>className</key>
 					<string>ResizeText</string>
@@ -1429,7 +1429,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{1400, 130}, {132, 58}}</string>
+					<string>{{1565, 154}, {121, 49}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -1537,7 +1537,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{1350, 170}, {1, 1}}</string>
+					<string>{{1510, 190}, {1, 1}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -1647,7 +1647,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{1390, 160}, {-40, 0}}</string>
+					<string>{{1550, 180}, {-40, 0}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -1757,7 +1757,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{640, 500}, {-460, 0}}</string>
+					<string>{{740, 520}, {-510, 0}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -1775,7 +1775,7 @@
 					<key>rotationAngle</key>
 					<integer>0</integer>
 					<key>rotationHandleRadius</key>
-					<real>265</real>
+					<real>280</real>
 					<key>scaleImage</key>
 					<true/>
 					<key>stroke1Color</key>
@@ -1852,13 +1852,23 @@
 					MFxmczI0IFxjZjIgXGV4cG5kMFxleHBuZHR3
 					MFxrZXJuaW5nMApcdXAwIElEOiAJCQlFRl8x
 					IChVVUlEKVwKVGltZXN0YW1wOglUaW1lXzFc
-					CkxvY2F0aW9uOgkJClxiIE51bGwKXGIwIFwK
-					UHJhY3RpdGlvbmVyOglTdHVkZW50XzFcClR5
-					cGU6CQlJbmplY3Rpb25cCkRhdGE6CQkKXGYx
-					IDxpbmplY3Rpb25cCgkgCQkJZHJ1Zz0iXHVj
-					MFx1MTU3IGRydWdfbmFtZSJcCgkgCQkJcXVh
-					bnRpdHk9IjEwIlwKCSAJCQl1bml0cz0iXHVj
-					MFx1MTU3IG1MIlwKCQkJLz59
+					CkVkdWNhdGlvbmFsLVwKRW5jb3VudGVyOglF
+					RV8xIChVVUlEKVwKTG9jYXRpb246CQkKXGIg
+					TnVsbApcYjAgXApBZ2VudCBUeXBlOgkiTEVB
+					Uk5FUiJcCkFnZW50IElEOgkJU3R1ZGVudF8x
+					IChVVUlEKVwKVHlwZToJCSJTdWJzdGFuY2Ug
+					Qm9sdXMiXApEYXRhOgkJXAoKXGYxIDw/eG1s
+					IHZlcnNpb249IjEuMCIgZW5jb2Rpbmc9IlVU
+					Ri04Ij8+XAo8RXZlbnRSZWNvcmQgdHlwZT0i
+					U3Vic3RhbmNlIEJvbHVzIj5cCiAgICA8U3Vi
+					c3RhbmNlPiBLZXRhbWluZTwvU3Vic3RhbmNl
+					PlwKICAgIDxDb25jZW50cmF0aW9uXAoJCXZh
+					bHVlPSIxMDAwLjAiIFwKCQl1bml0PSJtYXNz
+					IHBlciB2b2x1bWUgdW5pdCJcCgkvPlwKICAg
+					IDxEb3NlIHZhbHVlPSIxMTUuMCIgdW5pdD0i
+					bUwiLz5cCiAgICA8QWRtaW5Sb3V0ZT5JbnRy
+					YXZlbm91czwvQWRtaW5Sb3V0ZT5cCjwvRXZl
+					bnRSZWNvcmQ+fQ==
 					</data>
 					<key>className</key>
 					<string>Swoosh</string>
@@ -1885,7 +1895,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{330, 310}, {250, 170}}</string>
+					<string>{{370, 330}, {310, 310}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -1901,7 +1911,7 @@
 					<key>rotationAngle</key>
 					<integer>0</integer>
 					<key>rotationHandleRadius</key>
-					<real>160</real>
+					<real>235</real>
 					<key>scaleImage</key>
 					<true/>
 					<key>stroke1Color</key>
@@ -1985,7 +1995,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{170, 160}, {20, 100}}</string>
+					<string>{{220, 180}, {20, 100}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -2093,7 +2103,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{170, 210}, {-30, 0}}</string>
+					<string>{{220, 230}, {-30, 0}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -2212,7 +2222,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{80, 200}, {56, 29}}</string>
+					<string>{{130, 220}, {56, 29}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -2330,7 +2340,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{80, 250}, {53, 43}}</string>
+					<string>{{130, 270}, {53, 43}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -2438,7 +2448,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{180, 270}, {-40, 0}}</string>
+					<string>{{230, 290}, {-40, 0}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -2548,7 +2558,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{180, 320}, {150, 0}}</string>
+					<string>{{230, 340}, {140, 0}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -2666,7 +2676,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{210, 300}, {46, 16}}</string>
+					<string>{{260, 320}, {46, 16}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -2756,12 +2766,14 @@
 					MFx0eDY3MjBccGFyZGlybmF0dXJhbFxwYXJ0
 					aWdodGVuZmFjdG9yMAoKXGYwXGZzMjQgXGNm
 					MiBcZXhwbmQwXGV4cG5kdHcwXGtlcm5pbmcw
-					CklEOiAJCQlGQVJfMVwKRnJhZ21lbnQgSUQ6
-					CUVGXzFcClN0YXR1czoJCVJlcXVlc3Rpbmdc
-					ClRpbWVzdGFtcDoJTnVsbFwKTG9jYXRpb246
-					CQlSaWdodF9Bcm1cClByYWN0aXRpb25lcjoJ
-					TnVsbFwKVHlwZToJCU51bGxcCkRhdGE6CQlO
-					dWxsXAp9
+					CklEOiAJCQlGQVJfMSAoVVVJRClcCkZyYWdt
+					ZW50IElEOglFRl8xXApTdGF0dXM6CQkiUkVR
+					VUVTVElORyJcClRpbWVzdGFtcDoJTnVsbFwK
+					TG9jYXRpb246CQkKXGIgXHsgRk1BSUQ6IDIy
+					NzM0LFwKCQkJICBuYW1lOiAibGVmdCByYWRp
+					YWwgYXJ0ZXJ5Ilx9ClxiMCBcCkFnZW50IFR5
+					cGU6CU51bGxcCkFnZW50IElEOgkJTnVsbFwK
+					fQ==
 					</data>
 					<key>className</key>
 					<string>Swoosh</string>
@@ -2788,7 +2800,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{640, 480}, {250, 170}}</string>
+					<string>{{740, 500}, {250, 150}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -2904,7 +2916,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{202, 261}, {67, 17}}</string>
+					<string>{{252, 281}, {67, 17}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -3012,7 +3024,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{1350, 710}, {-750, 0}}</string>
+					<string>{{1510, 730}, {-750, 0}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -3122,7 +3134,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{180, 660}, {460, 0}}</string>
+					<string>{{230, 680}, {490, 0}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -3140,7 +3152,7 @@
 					<key>rotationAngle</key>
 					<integer>0</integer>
 					<key>rotationHandleRadius</key>
-					<real>250</real>
+					<real>280</real>
 					<key>scaleImage</key>
 					<true/>
 					<key>stroke1Color</key>
@@ -3241,7 +3253,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{195, 640}, {156, 16}}</string>
+					<string>{{245, 660}, {156, 16}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -3332,15 +3344,40 @@
 					NTYwMFx0eDYxNjBcdHg2NzIwXHBhcmRpcm5h
 					dHVyYWxccGFydGlnaHRlbmZhY3RvcjAKClxm
 					MFxmczI0IFxjZjIgXGV4cG5kMFxleHBuZHR3
-					MFxrZXJuaW5nMApJRDogCQkJRVJfMSAoc2Ft
-					ZSBVVUlEIGFzIEVGXzEpXApUaW1lc3RhbXA6
-					CVRpbWVfMVwKTG9jYXRpb246CQlSaWdodF9B
-					cm1cClByYWN0aXRpb25lcjoJU3R1ZGVudF8x
-					XApUeXBlOgkJSW5qZWN0aW9uXApEYXRhOgkJ
-					ClxmMSA8aW5qZWN0aW9uXAoJIAkJCWRydWc9
-					Ilx1YzBcdTE1NyBkcnVnX25hbWUiXAoJIAkJ
-					CXF1YW50aXR5PSIxMCJcCgkgCQkJdW5pdHM9
-					Ilx1YzBcdTE1NyBtTCJcCgkJCS8+fQ==
+					MFxrZXJuaW5nMApJRDogCQkJRUZfMSAoVVVJ
+					RClcClRpbWVzdGFtcDoJVGltZV8xXApFZHVj
+					YXRpb25hbC1cCkVuY291bnRlcjoJRUVfMSAo
+					VVVJRClcCkxvY2F0aW9uOgkJXHsgRk1BSUQ6
+					IDIyNzM0LFwKXHBhcmRcdHg1NjBcdHgxMTIw
+					XHR4MTY4MFx0eDIyNDBcdHgyODAwXHR4MzM2
+					MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2
+					MDBcdHg2MTYwXHR4NjcyMFxwYXJkaXJuYXR1
+					cmFsXHBhcnRpZ2h0ZW5mYWN0b3IwClxjZjIg
+					CQkJICBuYW1lOiAibGVmdCByYWRpYWwgYXJ0
+					ZXJ5IiBcfVwKXHBhcmRcdHg1NjBcdHgxMTIw
+					XHR4MTY4MFx0eDIyNDBcdHgyODAwXHR4MzM2
+					MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2
+					MDBcdHg2MTYwXHR4NjcyMFxwYXJkaXJuYXR1
+					cmFsXHBhcnRpZ2h0ZW5mYWN0b3IwClxjZjIg
+					QWdlbnQgVHlwZToJIkxFQVJORVIiXApBZ2Vu
+					dCBJRDoJCVN0dWRlbnRfMSAoVVVJRClcClR5
+					cGU6CQkiU3Vic3RhbmNlIEJvbHVzIlwKRGF0
+					YToJCVwKXHBhcmRcdHg1NjBcdHgxMTIwXHR4
+					MTY4MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0
+					eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBc
+					dHg2MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFs
+					XHBhcnRpZ2h0ZW5mYWN0b3IwCgpcZjEgXGNm
+					MiA8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29k
+					aW5nPSJVVEYtOCI/PlwKPEV2ZW50UmVjb3Jk
+					IHR5cGU9IlN1YnN0YW5jZSBCb2x1cyI+XAog
+					ICAgPFN1YnN0YW5jZT4gS2V0YW1pbmU8L1N1
+					YnN0YW5jZT5cCiAgICA8Q29uY2VudHJhdGlv
+					blwKCQl2YWx1ZT0iMTAwMC4wIiBcCgkJdW5p
+					dD0ibWFzcyBwZXIgdm9sdW1lIHVuaXQiXAoJ
+					Lz5cCiAgICA8RG9zZSB2YWx1ZT0iMTE1LjAi
+					IHVuaXQ9Im1MIi8+XAogICAgPEFkbWluUm91
+					dGU+SW50cmF2ZW5vdXM8L0FkbWluUm91dGU+
+					XAo8L0V2ZW50UmVjb3JkPn0=
 					</data>
 					<key>className</key>
 					<string>Swoosh</string>
@@ -3367,7 +3404,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{950, 730}, {250, 170}}</string>
+					<string>{{1050, 750}, {310, 330}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -3383,7 +3420,7 @@
 					<key>rotationAngle</key>
 					<integer>0</integer>
 					<key>rotationHandleRadius</key>
-					<real>160</real>
+					<real>175</real>
 					<key>scaleImage</key>
 					<true/>
 					<key>stroke1Color</key>
@@ -3475,7 +3512,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{180, 750}, {770, 0}}</string>
+					<string>{{230, 770}, {820, 0}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -3493,7 +3530,7 @@
 					<key>rotationAngle</key>
 					<integer>0</integer>
 					<key>rotationHandleRadius</key>
-					<real>415</real>
+					<real>460</real>
 					<key>scaleImage</key>
 					<true/>
 					<key>stroke1Color</key>
@@ -3567,12 +3604,13 @@
 					MFx0eDY3MjBccGFyZGlybmF0dXJhbFxwYXJ0
 					aWdodGVuZmFjdG9yMAoKXGYwXGZzMjQgXGNm
 					MiBcZXhwbmQwXGV4cG5kdHcwXGtlcm5pbmcw
-					CklEOiAJCQkKXGIgRkFSXzEKXGIwIFwKRnJh
-					Z21lbnQgSUQ6CUVGXzFcClN0YXR1czoJCQpc
-					YiBBY2NlcHRlZApcYjAgXApUaW1lc3RhbXA6
-					CU51bGxcCkxvY2F0aW9uOgkJUmlnaHRfQXJt
-					XApQcmFjdGl0aW9uZXI6CU51bGxcClR5cGU6
-					CQlOdWxsXApEYXRhOgkJTnVsbFwKfQ==
+					CklEOiAJCQlGQVJfMVwKRnJhZ21lbnQgSUQ6
+					CUVGXzFcClN0YXR1czoJCQpcYiAiQUNDRVBU
+					RUQiClxiMCBcClRpbWVzdGFtcDoJTnVsbFwK
+					TG9jYXRpb246CQlceyBGTUFJRDogMjI3MzQs
+					XAoJCQkgIG5hbWU6ICJsZWZ0IHJhZGlhbCBh
+					cnRlcnkiIFx9XApBZ2VudCBUeXBlOglOdWxs
+					XApBZ2VudCBJRDoJCU51bGxcCn0=
 					</data>
 					<key>className</key>
 					<string>Swoosh</string>
@@ -3599,7 +3637,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{640, 650}, {250, 170}}</string>
+					<string>{{740, 670}, {250, 160}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -3715,7 +3753,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{210, 730}, {50, 20}}</string>
+					<string>{{260, 750}, {50, 20}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -3823,7 +3861,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{180, 790}, {440, 0}}</string>
+					<string>{{230, 880}, {490, 0}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -3841,7 +3879,7 @@
 					<key>rotationAngle</key>
 					<integer>0</integer>
 					<key>rotationHandleRadius</key>
-					<real>250</real>
+					<real>265</real>
 					<key>scaleImage</key>
 					<true/>
 					<key>stroke1Color</key>
@@ -3941,7 +3979,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{204, 771}, {83, 17}}</string>
+					<string>{{234, 861}, {83, 17}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -4049,7 +4087,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{1350, 170}, {-750, 0}}</string>
+					<string>{{1510, 190}, {-810, 0}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -4167,7 +4205,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{1260, 150}, {70, 20}}</string>
+					<string>{{1420, 170}, {70, 20}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -4275,7 +4313,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{580, 330}, {770, 0}}</string>
+					<string>{{680, 350}, {830, 0}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -4385,7 +4423,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{1350, 490}, {-460, 0}}</string>
+					<string>{{1510, 510}, {-520, 0}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -4503,7 +4541,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{1270, 470}, {50, 20}}</string>
+					<string>{{1430, 490}, {50, 20}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -4613,7 +4651,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{1350, 330}, {150, 160}}</string>
+					<string>{{1510, 350}, {150, 160}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -4627,16 +4665,16 @@
 					<key>modelControlPoints</key>
 					<array>
 						<array>
-							<string>{1410, 478.57142857142856}</string>
-							<string>{1350, 330}</string>
+							<string>{1570, 498.57142857142856}</string>
+							<string>{1510, 350}</string>
 						</array>
 						<array>
-							<string>{1350, 329.99999999999994}</string>
-							<string>{1500, 329.99999999999994}</string>
+							<string>{1510, 349.99999999999994}</string>
+							<string>{1660, 349.99999999999994}</string>
 						</array>
 						<array>
-							<string>{1500, 490}</string>
-							<string>{1350, 490}</string>
+							<string>{1660, 510}</string>
+							<string>{1510, 510}</string>
 						</array>
 					</array>
 					<key>modelControlPointsIndependent</key>
@@ -4653,9 +4691,9 @@
 					</array>
 					<key>modelPoints</key>
 					<array>
-						<string>{1350, 330}</string>
-						<string>{1500, 410}</string>
-						<string>{1350, 490}</string>
+						<string>{1510, 350}</string>
+						<string>{1660, 430}</string>
+						<string>{1510, 510}</string>
 					</array>
 					<key>opacity</key>
 					<real>1</real>
@@ -4756,7 +4794,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{890, 670}, {460, 0}}</string>
+					<string>{{990, 690}, {520, 0}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -4774,7 +4812,7 @@
 					<key>rotationAngle</key>
 					<integer>0</integer>
 					<key>rotationHandleRadius</key>
-					<real>250</real>
+					<real>280</real>
 					<key>scaleImage</key>
 					<true/>
 					<key>stroke1Color</key>
@@ -4878,7 +4916,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{1354, 375}, {134, 72}}</string>
+					<string>{{1514, 395}, {134, 72}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -4986,7 +5024,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{1200, 750}, {150, 0}}</string>
+					<string>{{1360, 770}, {150, 0}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -5098,7 +5136,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{1350, 750}, {140, 160}}</string>
+					<string>{{1510, 770}, {140, 160}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -5112,16 +5150,16 @@
 					<key>modelControlPoints</key>
 					<array>
 						<array>
-							<string>{1410, 898.57142857142844}</string>
-							<string>{1350, 750}</string>
+							<string>{1570, 918.57142857142844}</string>
+							<string>{1510, 770}</string>
 						</array>
 						<array>
-							<string>{1350, 750}</string>
-							<string>{1490, 750}</string>
+							<string>{1510, 770}</string>
+							<string>{1650, 770}</string>
 						</array>
 						<array>
-							<string>{1490, 910}</string>
-							<string>{1350, 910}</string>
+							<string>{1650, 930}</string>
+							<string>{1510, 930}</string>
 						</array>
 					</array>
 					<key>modelControlPointsIndependent</key>
@@ -5138,9 +5176,9 @@
 					</array>
 					<key>modelPoints</key>
 					<array>
-						<string>{1350, 750}</string>
-						<string>{1490, 830}</string>
-						<string>{1350, 910}</string>
+						<string>{1510, 770}</string>
+						<string>{1650, 850}</string>
+						<string>{1510, 930}</string>
 					</array>
 					<key>opacity</key>
 					<real>1</real>
@@ -5249,7 +5287,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{1250, 690}, {80, 20}}</string>
+					<string>{{1410, 710}, {80, 20}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -5359,7 +5397,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{1350, 670}, {50, 40}}</string>
+					<string>{{1510, 690}, {50, 40}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -5373,16 +5411,16 @@
 					<key>modelControlPoints</key>
 					<array>
 						<array>
-							<string>{1370, 707.14285714285711}</string>
-							<string>{1350, 670}</string>
+							<string>{1530, 727.14285714285711}</string>
+							<string>{1510, 690}</string>
 						</array>
 						<array>
-							<string>{1350, 670}</string>
-							<string>{1400, 670}</string>
+							<string>{1510, 690}</string>
+							<string>{1560, 690}</string>
 						</array>
 						<array>
-							<string>{1400, 710}</string>
-							<string>{1350, 710}</string>
+							<string>{1560, 730}</string>
+							<string>{1510, 730}</string>
 						</array>
 					</array>
 					<key>modelControlPointsIndependent</key>
@@ -5399,9 +5437,9 @@
 					</array>
 					<key>modelPoints</key>
 					<array>
-						<string>{1350, 670}</string>
-						<string>{1400, 690}</string>
-						<string>{1350, 710}</string>
+						<string>{1510, 690}</string>
+						<string>{1560, 710}</string>
+						<string>{1510, 730}</string>
 					</array>
 					<key>opacity</key>
 					<real>1</real>
@@ -5514,7 +5552,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{1362, 611}, {127, 58}}</string>
+					<string>{{1522, 631}, {127, 58}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -5624,7 +5662,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{90, 500}, {90, 160}}</string>
+					<string>{{140, 520}, {90, 160}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -5638,16 +5676,16 @@
 					<key>modelControlPoints</key>
 					<array>
 						<array>
-							<string>{170, 590}</string>
-							<string>{180, 500}</string>
+							<string>{220, 610}</string>
+							<string>{230, 520}</string>
 						</array>
 						<array>
-							<string>{180, 500}</string>
-							<string>{89.999999999999972, 500}</string>
+							<string>{230, 520}</string>
+							<string>{139.99999999999997, 520}</string>
 						</array>
 						<array>
-							<string>{90.000000000000028, 660}</string>
-							<string>{180, 660}</string>
+							<string>{140.00000000000003, 680}</string>
+							<string>{230, 680}</string>
 						</array>
 					</array>
 					<key>modelControlPointsIndependent</key>
@@ -5664,9 +5702,9 @@
 					</array>
 					<key>modelPoints</key>
 					<array>
-						<string>{180, 500}</string>
-						<string>{90, 580}</string>
-						<string>{180, 660}</string>
+						<string>{230, 520}</string>
+						<string>{140, 600}</string>
+						<string>{230, 680}</string>
 					</array>
 					<key>opacity</key>
 					<real>1</real>
@@ -5776,7 +5814,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{120, 660}, {48, 29}}</string>
+					<string>{{170, 680}, {48, 29}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -5894,7 +5932,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{70, 750}, {101, 29}}</string>
+					<string>{{120, 770}, {101, 29}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -5982,7 +6020,7 @@
 					dHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIw
 					XHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2
 					MFx0eDY3MjBccGFyZGlybmF0dXJhbFxxY1xw
-					YXJ0aWdodGVuZmFjdG9yMAoKXGYwXGZzMjQg
+					YXJ0aWdodGVuZmFjdG9yMAoKXGYwXGZzMjIg
 					XGNmMiBcZXhwbmQwXGV4cG5kdHcwXGtlcm5p
 					bmcwClB1Ymxpc2ggUGh5c2lvbG9neSwgXApB
 					c3Nlc3NtZW50LCBhbmQvb3JcClJlbmRlciBk
@@ -6014,7 +6052,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{1366, 803}, {107, 72}}</string>
+					<string>{{1526, 823}, {107, 72}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -6124,7 +6162,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{50, 500}, {130, 250}}</string>
+					<string>{{100, 520}, {130, 250}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -6138,16 +6176,16 @@
 					<key>modelControlPoints</key>
 					<array>
 						<array>
-							<string>{169.16666666666666, 652.13815789473676}</string>
-							<string>{180, 500}</string>
+							<string>{219.16666666666666, 672.13815789473676}</string>
+							<string>{230, 520}</string>
 						</array>
 						<array>
-							<string>{180, 500}</string>
-							<string>{50, 497.91399229781774}</string>
+							<string>{230, 520}</string>
+							<string>{100, 517.91399229781769}</string>
 						</array>
 						<array>
-							<string>{50.000000000000028, 721.59820282413352}</string>
-							<string>{180, 750}</string>
+							<string>{100.00000000000003, 741.59820282413352}</string>
+							<string>{230, 770}</string>
 						</array>
 					</array>
 					<key>modelControlPointsIndependent</key>
@@ -6164,9 +6202,9 @@
 					</array>
 					<key>modelPoints</key>
 					<array>
-						<string>{180, 500}</string>
-						<string>{50, 609.7560975609756}</string>
-						<string>{180, 750}</string>
+						<string>{230, 520}</string>
+						<string>{100, 629.7560975609756}</string>
+						<string>{230, 770}</string>
 					</array>
 					<key>opacity</key>
 					<real>1</real>
@@ -6257,7 +6295,7 @@
 			<key>fillType</key>
 			<integer>0</integer>
 			<key>frame</key>
-			<string>{{0, 0}, {1600, 1000}}</string>
+			<string>{{0, 0}, {1800, 1200}}</string>
 			<key>gridTolerance</key>
 			<real>10</real>
 			<key>hidden</key>
@@ -6279,7 +6317,7 @@
 				<key>group</key>
 				<integer>0</integer>
 				<key>height</key>
-				<real>1000</real>
+				<real>1200</real>
 				<key>name</key>
 				<string>Custom</string>
 				<key>resolution</key>
@@ -6287,7 +6325,7 @@
 				<key>unitType</key>
 				<integer>0</integer>
 				<key>width</key>
-				<real>1600</real>
+				<real>1800</real>
 			</dict>
 			<key>opacity</key>
 			<real>1</real>
@@ -6300,7 +6338,7 @@
 			<key>scaleImage</key>
 			<true/>
 			<key>scrollCenterPoint</key>
-			<string>{800, 500}</string>
+			<string>{900, 600}</string>
 			<key>stroke1Color</key>
 			<string></string>
 			<key>stroke1Enabled</key>

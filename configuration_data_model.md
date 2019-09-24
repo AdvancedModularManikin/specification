@@ -238,11 +238,12 @@ This also means the Capabilities Schema for the module should reflect possible s
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration>
-  <Capability type="Pulse" location="22734 [FMAID for left radial artery]">
+  <!-- 22734 is the FMAID for left radial artery -->
+  <Capability type="Pulse" location="22734">
     <!-- initially disabled -->
     <enable>false</enable>
   </Capability>
-  <Capability type="IV Access" location="22734 [FMAID for left radial artery]">
+  <Capability type="IV Access" location="22734">
     <!-- initially disabled -->
     <enable>false</enable>
     <state>0</state>
@@ -259,11 +260,12 @@ Happens 41 seconds after startup. Changes highlighted.
 Capabilities Configuration:
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration>
-  <Capability type="Pulse" location="22734 [FMAID for left radial artery]">
+  <!-- 22734 is the FMAID for left radial artery -->
+  <Capability type="Pulse" location="22734">
     <!-- enabled by scenario -->
     <enable>true</enable> <!-- Changed to true -->
   </Capability>
-  <Capability type="IV Access" location="22734 [FMAID for left radial artery]">
+  <Capability type="IV Access" location="22734">
     <!-- enabled by scenario -->
     <enable>true</enable> <!-- Changed to true -->
     <state>0</state>
@@ -281,10 +283,11 @@ Happens 500 seconds after scenario load. Changes highlighted.
 Capabilities Configuration:
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration>
-  <Capability type="Pulse" location="22734 [FMAID for left radial artery]">
+  <!-- 22734 is the FMAID for left radial artery -->
+  <Capability type="Pulse" location="22734">
     <enable>true</enable>
   </Capability>
-  <Capability type="IV Access" location="22734 [FMAID for left radial artery]">
+  <Capability type="IV Access" location="22734">
     <enable>true</enable>
     <!-- internal state was at ‘6’ when ‘Save’ was received -->
     <state>6</state> <!-- Changed from 0 to 6 -->
