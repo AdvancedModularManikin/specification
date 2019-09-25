@@ -7,7 +7,7 @@ A Module is, at minimum, a computer running code that communicates via the AMM c
 Modules that simulate a physical segment of the human body have additional physical requirements.
  
 In order for any Module to comply with AMM, it must communicate as described by the
- [Operational Data Model](operationa_data_model.md),
+ [Operational Data Model](operational_data_model.md),
  [Configuration Data Model](configuration_data_model.md), and 
  [Module Behavior Requirements](module_behavior_requirements.md) documents.
 

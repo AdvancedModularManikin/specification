@@ -44,7 +44,7 @@ The Topic consists of several metadata fields about the module, along with the `
  which is an XML document describing the Capabilities and configuration options for the Module.
 
 The Module Manager (or other software performing equivalent core functionality) shall subscribe to this
- topic and record the associations between the the `module_id` value and the `manufacturer` and `model` values.
+ topic and record the associations between the `module_id` value and the `manufacturer` and `model` values.
 The combination of `manufacturer` & `model` is used to associate configurations in the Scenario with connected Modules.
 Additionally, the `configuration_version` field is compared to ensure compatibility.
  

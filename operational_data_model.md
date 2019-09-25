@@ -503,7 +503,7 @@ The `INOPERATIVE` status indicates that the Module is currently unable to partic
 This may be because a Scenario hasn't been loaded, hardware has failed,
  or a fluid reservoir is empty, for example.
 The `EXIGENT` status indicates that a Module is currently able to participate in the simulation,
- but will not not be able to continue participating in the simulation without human intervention.
+ but will not be able to continue participating in the simulation without human intervention.
  
 The `EXIGENT` status should be used primarily to raise alerts to the AMM operator that action is required in
  order to continue the simulation.
