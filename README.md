@@ -11,6 +11,3 @@ In order for any Module to comply with AMM, it must communicate as described by 
  [Configuration Data Model](configuration_data_model.md), and 
  [Module Behavior Requirements](module_behavior_requirements.md) documents.
 
-
-
-Design information in the [Project Wiki](https://github.com/AdvancedModularManikin/specification/wiki)
