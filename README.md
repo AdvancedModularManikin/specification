@@ -1,9 +1,9 @@
 # Specification of the Advanced Modular Manikin (AMM)
 This repository documents the data and behavior requirements of the AMM interoperability specification.
 
-An AMM system is logically–and frequently, physically–broken into a collection of independent Modules.
+An AMM system is logically – and frequently, physically – divided into a collection of independent Modules.
 A Module is, at minimum, a computer running code that communicates via the AMM communication interoperability
- specification.
+ specification, described here.
 Modules that simulate a physical segment of the human body have additional physical requirements.
  
 In order for any Module to comply with AMM, it must communicate as described by the
