@@ -10,4 +10,5 @@ In order for any Module to comply with AMM, it must communicate as described by 
  [Operational Data Model](operational_data_model.md),
  [Configuration Data Model](configuration_data_model.md), and 
  [Module Behavior Requirements](module_behavior_requirements.md) documents.
-
+ 
+ Educational Encounter Scenarios may be defined using the [Scenario File specification](scenario_file_specification.md).
